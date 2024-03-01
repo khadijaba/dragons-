@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1333</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>0</y>
+      <width>1001</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <widget class="QWidget" name="pageAfficher">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1011</width>
+        <height>431</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/backg.jpg.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 27pt;
+color: rgb(255, 170, 0);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>afficher un abonne:</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>110</y>
+        <width>531</width>
+        <height>211</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 10px; /* Coins arrondis */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QTableWidget::item {
+    padding: 8px; /* Espacement interne des cellules */
+    border-bottom: 1px solid #3498db; /* Bordure basse de chaque cellule */
+}
+
+QTableWidget::item:selected {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair lorsqu'une cellule est sélectionnée */
+    color: #ecf0f1; /* Couleur du texte lorsqu'une cellule est sélectionnée */
+}
+
+QTableWidget::item:hover {
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'une cellule est survolée */
+}
+
+QHeaderView::section {
+    background-color: rgba(44, 62, 80, 0.8); /* Fond bleu foncé plus clair pour l'en-tête */
+    color: #ecf0f1; /* Couleur du texte de l'en-tête */
+    padding: 5px; /* Espacement interne de l'en-tête */
+    border: 1px solid #3498db; /* Bordure de l'en-tête */
+}
+
+QTableWidget::horizontalHeader {
+    border-bottom: 2px solid #3498db; /* Bordure basse de l'en-tête horizontal */
+}
+
+QTableWidget::verticalHeader {
+    border-right: 2px solid #3498db; /* Bordure droite de l'en-tête vertical */
+}
+
+QTableWidget::horizontalHeader::section,
+QTableWidget::verticalHeader::section {
+    border-radius: 0; /* Pas de coins arrondis pour les coins des sections d'en-tête */
+}
+
+QTableWidget QScrollBar:vertical {
+    width: 8px; /* Largeur de la barre de défilement verticale */
+    background-color: rgba(44, 62, 80, 0.8); /* Fond bleu foncé plus clair pour la barre de défilement verticale */
+}
+
+QTableWidget QScrollBar::handle:vertical {
+    background-color: #3498db; /* Couleur de la poignée de la barre de défilement verticale */
+    border-radius: 4px; /* Coins arrondis pour la poignée de la barre de défilement verticale */
+}
+</string>
+      </property>
+      <row>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>2</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>3</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </row>
+      <row>
+       <property name="text">
+        <string>5</string>
+       </property>
+      </row>
+      <column>
+       <property name="text">
+        <string>id</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>nom</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>prenom</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>email</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>paiment</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="suivantButton">
+      <property name="geometry">
+       <rect>
+        <x>830</x>
+        <y>370</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>suivant</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageAjouter">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>-10</y>
+        <width>1011</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/backg.jpg.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>30</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 27pt;
+color: rgb(255, 170, 0);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>ajouter un abonne:</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>278</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="id_a">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id_a:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="nom">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>nom:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="prenom">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>prenom:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_9">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>adresse email</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="paiment">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>methode de paiment</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_id">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>110</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_nom">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>180</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_prenom">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>250</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_email">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>310</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="precedentButton">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>390</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>précédent</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="suivantButton_2">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>390</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>suivant</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ajouterButton">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>210</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>ajouter</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>390</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QComboBox:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QComboBox::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QComboBox::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence pour la liste déroulante */
+    border: 2px solid #3498db; /* Bordure bleue pour la liste déroulante */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection dans la liste déroulante */
+    color: #ecf0f1; /* Couleur du texte dans la liste déroulante */
+}
+</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageModifier">
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1001</width>
+        <height>541</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/backg.jpg.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_12">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>30</y>
+        <width>331</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 27pt;
+color: rgb(255, 170, 0);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>modifier un abonne:</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>90</y>
+        <width>278</width>
+        <height>341</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="idToSearch">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>id_a:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_14">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>nom:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_15">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>prenom:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_16">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>adresse email</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_17">
+         <property name="styleSheet">
+          <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>methode de paiment</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_idChercher">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>110</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_email_2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>320</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_prenom_2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>250</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_nom_2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>170</y>
+        <width>113</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_2">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>390</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QComboBox {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QComboBox:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QComboBox::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QComboBox::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence pour la liste déroulante */
+    border: 2px solid #3498db; /* Bordure bleue pour la liste déroulante */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection dans la liste déroulante */
+    color: #ecf0f1; /* Couleur du texte dans la liste déroulante */
+}
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>cheque</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>espece</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>carte bancaire</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="precedentButton_2">
+      <property name="geometry">
+       <rect>
+        <x>760</x>
+        <y>410</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>précédent</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="suivantButton_3piu">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>410</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>suivant</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="chercherButton">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>120</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>chercher</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="modifierButton">
+      <property name="geometry">
+       <rect>
+        <x>720</x>
+        <y>230</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="pageSupprimer">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>1001</width>
+        <height>451</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>images/backg.jpg.jpg</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_18">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>401</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 27pt;
+color: rgb(255, 170, 0);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>supprimer un abonne:</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="idToSupprimer">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>120</y>
+        <width>276</width>
+        <height>63</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font-size: 20pt;
+color: rgb(255, 255, 255);
+font-weight: bold;
+font-family: &quot;MS Serif&quot;;
+</string>
+      </property>
+      <property name="text">
+       <string>id_a:</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_idASupprimer">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>140</y>
+        <width>151</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="supprimerButton">
+      <property name="geometry">
+       <rect>
+        <x>260</x>
+        <y>220</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>supprimer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="precedentButton_3">
+      <property name="geometry">
+       <rect>
+        <x>550</x>
+        <y>400</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>précédent</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1333</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
