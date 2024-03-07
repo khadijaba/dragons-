@@ -4,6 +4,9 @@
 #include<QSqlQuery>
 #include<QSqlQueryModel>
 #include<QtSql>
+#include <QPrinter>
+#include <QTableWidget>
+
 class abonne {
     QString nom,prenom,email,paiment;
     int id_a;
@@ -30,6 +33,10 @@ public:
     bool modifier();
     bool supprimer(int id_a);
      QSqlQueryModel* recupererAbonnes();
+     bool importer_pdf(QPrinter &printer);
+      static int nombreTotalAbonnes();
+
+
 
 
 
