@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="16B46395-34BB-8ED2-DA7C-C713BDA53B9D" containerWithKeyObject="B6E1297F-F3B2-E7F2-873A-0F6361A08D5A" localFKIndex="9FB5BBBE-7EE1-0B8F-874B-8649701AD545" name="FK_EMPLOYE_EQUIPEMENT">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>FK_EMPLOYE_EQUIPEMENT</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-07 09:37:59 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<importedID>E5CCB48A-F711-7E9E-4F6E-FF94E0D1CEEE</importedID>
+<referredTableLongName>KHADIJABA.EQUIPEMENT</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BAB68C4C-E061-034D-CEA0-A815447936C7</referredTableID>
+<keyObject>B0117330-952A-A3C4-BFF1-DFE3001E7202</keyObject>
+<referredKeyID>B0117330-952A-A3C4-BFF1-DFE3001E7202</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_E</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

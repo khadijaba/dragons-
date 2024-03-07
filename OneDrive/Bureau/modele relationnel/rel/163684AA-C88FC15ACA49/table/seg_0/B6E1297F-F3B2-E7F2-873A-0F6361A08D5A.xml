@@ -1,0 +1,169 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B6E1297F-F3B2-E7F2-873A-0F6361A08D5A" schemaObject="261889A1-9314-E489-E351-D7DC0D969C31" name="EMPLOYE">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>EMPLOYE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:49 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID" id="89C7B83F-053B-1DF7-BBF0-C0C04CE49557">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="16B46395-34BB-8ED2-DA7C-C713BDA53B9D" referredColumn="66D625EF-8D81-18BB-EEE4-EFE8A6211690"/>
+</associations>
+</Column>
+<Column name="NOM" id="B08C2479-73A6-BD79-0E45-28C10A68A836">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>NOM</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRENOM" id="E5A930EE-4B75-2A65-7FBE-71CD5ABFD2AB">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>PRENOM</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="3F862DF0-E6DE-C293-EB59-7AB209E8F2B3">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="BBE177A5-DFA8-AFAE-B9C3-15F8DD465B17">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>TYPE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRÉSENCE" id="5431D48D-FF19-801D-5532-6A05B94C4FEC">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMPLOYE</sourceObjSchema>
+<sourceObjName>PRÉSENCE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_E" id="743232EF-DDF5-90E8-7127-73E07E03E24E">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:42:47 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2662236F-6F42-2AB8-CBB3-D4E76B110807" referredColumn="66D625EF-8D81-18BB-EEE4-EFE8A6211690"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AC0F4936-8348-1E7D-DFD3-5156C40D8E45" name="PK1">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>PK1</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89C7B83F-053B-1DF7-BBF0-C0C04CE49557"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3787DA52-B195-C1C8-F4F9-9DF2BB85BACC" schemaObject="261889A1-9314-E489-E351-D7DC0D969C31" name="PK1">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>PK1</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89C7B83F-053B-1DF7-BBF0-C0C04CE49557"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CFD2FB0-A6CE-E897-D2C4-C4EEB42EFE15" name="EMPLOYE_EQUIPEMENT_FK">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:42:47 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="743232EF-DDF5-90E8-7127-73E07E03E24E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9FB5BBBE-7EE1-0B8F-874B-8649701AD545" name="FK_EMPLOYE_EQUIPEMENT">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-07 09:37:59 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89C7B83F-053B-1DF7-BBF0-C0C04CE49557"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

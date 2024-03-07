@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CHAINES" directorySegmentName="seg_0" id="2F6758E8-7EAF-E48C-F17B-B01C4689E03D">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:49 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<schemaObject>261889A1-9314-E489-E351-D7DC0D969C31</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>55ADEB34-591F-DE36-FB9A-0D5304045138</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SATELLITE" id="3709E9DF-59C7-B29E-3BB1-737DBF1E69A4">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_EMISSION" id="39BA793A-5692-AE83-A2BA-0D3E046A88C0">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:38:48 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FREQUENCE" id="58F4E5DD-EA3D-F258-9354-F2A30C3060A1">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="POLARISATION" id="7FC38CAB-1468-F4B0-7F84-0B192B382515">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="QUALITE" id="9491AC69-D47B-25EB-075C-B86DAF554ABC">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOM" id="9D45597C-97C8-85EE-35C7-102B282FFA64">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SR" id="B231294E-0F28-9C21-70CB-F67AF0D500E5">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="FEC" id="B577D5A2-8DF9-1FB0-1BD5-1445802077F7">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="CA47F5DA-1035-2C7B-BF53-22F7317E6893">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:45:52 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_CHAINE" id="D1471935-4120-6E9E-029A-7A6522A5CDFC">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE" id="E45EDC2A-C1BC-9B74-DCBA-364777DB075B">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CHAINES_PK" id="C6E5011D-AACA-0F28-CFB9-909F3584E473">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<schemaObject>261889A1-9314-E489-E351-D7DC0D969C31</schemaObject>
+<segment>02688657-C6FB-BD19-F479-2390C8E4CEC6</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CHAINES_EMPLOYE_FK" id="22B8077E-B5B9-6888-F0AC-F43DAD142358">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:45:52 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_ABONNE_EMISSION" id="23A4255F-0A41-47FA-E79C-FA4DE961B72F">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-07 09:37:59 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="CHAINES_EMISSION_FK" id="3B07DF24-42CF-D38F-7F57-21FDD21C7F91">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:38:48 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CHAINES_EMPLOYE" id="6E914602-F29C-0983-DAEF-F3041A463181">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-07 09:37:59 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CHAINES_PK" id="81928D6D-8778-6E0A-1DAF-D9AD95C98E27">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<segment>02688657-C6FB-BD19-F479-2390C8E4CEC6</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+<existingIndex>C6E5011D-AACA-0F28-CFB9-909F3584E473</existingIndex>
+<indexSegment>02688657-C6FB-BD19-F479-2390C8E4CEC6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

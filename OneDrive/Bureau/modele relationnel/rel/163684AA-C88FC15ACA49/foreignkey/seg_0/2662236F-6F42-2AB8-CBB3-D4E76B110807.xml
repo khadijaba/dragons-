@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2662236F-6F42-2AB8-CBB3-D4E76B110807" containerWithKeyObject="B6E1297F-F3B2-E7F2-873A-0F6361A08D5A" localFKIndex="1CFD2FB0-A6CE-E897-D2C4-C4EEB42EFE15" name="EMPLOYE_EQUIPEMENT_FK">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:42:47 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<referredTableLongName>KHADIJABA.EQUIPEMENT</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>BAB68C4C-E061-034D-CEA0-A815447936C7</referredTableID>
+<keyObject>B0117330-952A-A3C4-BFF1-DFE3001E7202</keyObject>
+<referredKeyID>B0117330-952A-A3C4-BFF1-DFE3001E7202</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_E</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorColumn>66D625EF-8D81-18BB-EEE4-EFE8A6211690</discriminatorColumn>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

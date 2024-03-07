@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7C3E826F-54B6-82B2-3E1A-1BB2459DF5A8" containerWithKeyObject="22F768D7-F952-D45D-363A-AB332D94AFEC" localFKIndex="3CE6BB50-AA96-4643-5E04-EBD011C59C97" name="PUBLICITEE_EMISSION_FK">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:46:31 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<referredTableLongName>KHADIJABA.EMISSION</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>BE40C131-260C-4553-A5C5-824A5845A5C5</referredTableID>
+<keyObject>7517472C-36EA-DA12-8DDB-590988D153D0</keyObject>
+<referredKeyID>7517472C-36EA-DA12-8DDB-590988D153D0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_EMISSION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorColumn>FB5CA19F-FBB4-CDEA-FC7A-46D79D6F37DB</discriminatorColumn>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

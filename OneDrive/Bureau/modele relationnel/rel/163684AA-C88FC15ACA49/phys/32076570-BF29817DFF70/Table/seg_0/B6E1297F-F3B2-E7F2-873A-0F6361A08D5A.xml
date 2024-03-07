@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMPLOYE" directorySegmentName="seg_0" id="B6E1297F-F3B2-E7F2-873A-0F6361A08D5A">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:49 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<schemaObject>261889A1-9314-E489-E351-D7DC0D969C31</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>55ADEB34-591F-DE36-FB9A-0D5304045138</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="EMAIL" id="3F862DF0-E6DE-C293-EB59-7AB209E8F2B3">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRÉSENCE" id="5431D48D-FF19-801D-5532-6A05B94C4FEC">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_E" id="743232EF-DDF5-90E8-7127-73E07E03E24E">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:42:47 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="89C7B83F-053B-1DF7-BBF0-C0C04CE49557">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NOM" id="B08C2479-73A6-BD79-0E45-28C10A68A836">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE" id="BBE177A5-DFA8-AFAE-B9C3-15F8DD465B17">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRENOM" id="E5A930EE-4B75-2A65-7FBE-71CD5ABFD2AB">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK1" id="3787DA52-B195-C1C8-F4F9-9DF2BB85BACC">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<schemaObject>261889A1-9314-E489-E351-D7DC0D969C31</schemaObject>
+<segment>02688657-C6FB-BD19-F479-2390C8E4CEC6</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EMPLOYE_EQUIPEMENT_FK" id="1CFD2FB0-A6CE-E897-D2C4-C4EEB42EFE15">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:42:47 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_EMPLOYE_EQUIPEMENT" id="9FB5BBBE-7EE1-0B8F-874B-8649701AD545">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-07 09:37:59 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK1" id="AC0F4936-8348-1E7D-DFD3-5156C40D8E45">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<segment>02688657-C6FB-BD19-F479-2390C8E4CEC6</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+<existingIndex>3787DA52-B195-C1C8-F4F9-9DF2BB85BACC</existingIndex>
+<indexSegment>02688657-C6FB-BD19-F479-2390C8E4CEC6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

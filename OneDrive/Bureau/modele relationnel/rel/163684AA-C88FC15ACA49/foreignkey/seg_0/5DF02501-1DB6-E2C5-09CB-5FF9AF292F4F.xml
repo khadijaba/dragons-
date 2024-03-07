@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5DF02501-1DB6-E2C5-09CB-5FF9AF292F4F" containerWithKeyObject="2F6758E8-7EAF-E48C-F17B-B01C4689E03D" localFKIndex="23A4255F-0A41-47FA-E79C-FA4DE961B72F" name="FK_ABONNE_EMISSION">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>FK_ABONNE_EMISSION</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-07 09:37:59 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<importedID>0DBE0043-A992-2AFC-2D6A-305C1831D37E</importedID>
+<referredTableLongName>KHADIJABA.EMISSION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BE40C131-260C-4553-A5C5-824A5845A5C5</referredTableID>
+<keyObject>7517472C-36EA-DA12-8DDB-590988D153D0</keyObject>
+<referredKeyID>7517472C-36EA-DA12-8DDB-590988D153D0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_EMISSION</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

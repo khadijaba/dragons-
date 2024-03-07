@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="22F768D7-F952-D45D-363A-AB332D94AFEC" schemaObject="261889A1-9314-E489-E351-D7DC0D969C31" name="PUBLICITEE">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>PUBLICITEE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_PUBLICITE" id="C698C2EE-098B-2E9D-3FEA-D46149E7EABF">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>PUBLICITEE</sourceObjSchema>
+<sourceObjName>ID_PUBLICITE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0185553-7FCB-C300-B92F-49FA986FDB8E" referredColumn="FB5CA19F-FBB4-CDEA-FC7A-46D79D6F37DB"/>
+</associations>
+</Column>
+<Column name="COMPAGNIE" id="3A656B09-6594-681F-ED92-F503C5B85BBE">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>PUBLICITEE</sourceObjSchema>
+<sourceObjName>COMPAGNIE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="74C3A42F-014C-C0CD-0D4F-E4D8B1B49B4D">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>PUBLICITEE</sourceObjSchema>
+<sourceObjName>TYPE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FREQUENCE" id="D5E94742-AA63-7F20-080D-7B0037EB3998">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>PUBLICITEE</sourceObjSchema>
+<sourceObjName>FREQUENCE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 BYTE</dataTypeSize>
+<ownDataTypeParameters>30 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BUDGET" id="340F16A4-1DED-7E1A-3EB0-66F6CD84BB2E">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>PUBLICITEE</sourceObjSchema>
+<sourceObjName>BUDGET</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DUREE" id="010EE879-EF01-5AFB-117A-FAA057E58D11">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>PUBLICITEE</sourceObjSchema>
+<sourceObjName>DUREE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_DB" id="5C5AE2BA-BA0F-5AB6-562A-EFF183422AED">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>PUBLICITEE</sourceObjSchema>
+<sourceObjName>DATE_DB</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_FN" id="D7C18120-27C6-B7D7-11AE-B22FBBD9FF80">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>PUBLICITEE</sourceObjSchema>
+<sourceObjName>DATE_FN</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_EMISSION" id="3FCC3889-8C2B-8EB6-AF29-27A5DE1BCF33">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:46:31 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7C3E826F-54B6-82B2-3E1A-1BB2459DF5A8" referredColumn="FB5CA19F-FBB4-CDEA-FC7A-46D79D6F37DB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88F5EF3C-CB42-BD1C-5D3D-4E069E808065" name="PK">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>PK</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:51 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C698C2EE-098B-2E9D-3FEA-D46149E7EABF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="802FC0EF-5AC4-2AA6-AFFC-EDF27F935F9A" schemaObject="261889A1-9314-E489-E351-D7DC0D969C31" name="PK">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>PK</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C698C2EE-098B-2E9D-3FEA-D46149E7EABF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3CE6BB50-AA96-4643-5E04-EBD011C59C97" name="PUBLICITEE_EMISSION_FK">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:46:31 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FCC3889-8C2B-8EB6-AF29-27A5DE1BCF33"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C0416432-B51A-2B9A-41CF-2E3AB71DA12C" name="FK_PUBLICITE_EMISSION">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-07 09:37:59 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C698C2EE-098B-2E9D-3FEA-D46149E7EABF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

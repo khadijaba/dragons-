@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EQUIPEMENT" directorySegmentName="seg_0" id="BAB68C4C-E061-034D-CEA0-A815447936C7">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<schemaObject>261889A1-9314-E489-E351-D7DC0D969C31</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>55ADEB34-591F-DE36-FB9A-0D5304045138</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DATEE" id="612D68F4-F0A5-77EA-FBD0-14BB4005E14D">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID_E" id="66D625EF-8D81-18BB-EEE4-EFE8A6211690">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TYPE" id="7B89E045-C064-C394-67AC-2A551287CE6D">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRIX" id="8158C446-11F0-1BEB-FA8A-1B8F959337E3">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EQUIPEMENT_PK" id="0339C656-2BAD-7689-1048-7726D3720384">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<schemaObject>261889A1-9314-E489-E351-D7DC0D969C31</schemaObject>
+<segment>02688657-C6FB-BD19-F479-2390C8E4CEC6</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EQUIPEMENT_PK" id="B0117330-952A-A3C4-BFF1-DFE3001E7202">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:51 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<segment>02688657-C6FB-BD19-F479-2390C8E4CEC6</segment>
+<tableSpace>FB65D046-8D63-9560-CD5E-78913224B9C8</tableSpace>
+<existingIndex>0339C656-2BAD-7689-1048-7726D3720384</existingIndex>
+<indexSegment>02688657-C6FB-BD19-F479-2390C8E4CEC6</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

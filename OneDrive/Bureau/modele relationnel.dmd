@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="modele relationnel" id="B5B9AAC7-11A8-BA94-5A80-153842F8C573" version="3.5">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:04:46 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>B5B9AAC7-11A8-BA94-5A80-153842F8C573</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="B72E0A9F-10EC-1848-FA4F-6F4D27747C4E">
+<designStoragePath>C:\</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

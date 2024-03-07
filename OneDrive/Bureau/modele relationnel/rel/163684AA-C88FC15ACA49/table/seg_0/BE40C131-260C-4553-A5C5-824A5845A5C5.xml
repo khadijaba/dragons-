@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE40C131-260C-4553-A5C5-824A5845A5C5" schemaObject="261889A1-9314-E489-E351-D7DC0D969C31" name="EMISSION">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>EMISSION</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:49 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_EMISSION" id="FB5CA19F-FBB4-CDEA-FC7A-46D79D6F37DB">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMISSION</sourceObjSchema>
+<sourceObjName>ID_EMISSION</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TITRE" id="C04DD8D0-3D20-BCC9-ACD1-048E71DA1E1F">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMISSION</sourceObjSchema>
+<sourceObjName>TITRE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESCRIPTION" id="2EAF3342-6395-784F-216F-2D08095233EC">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMISSION</sourceObjSchema>
+<sourceObjName>DESCRIPTION</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATE_DIFFUSION" id="642B37DF-AA57-53C7-DEB9-7F8483EBA097">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMISSION</sourceObjSchema>
+<sourceObjName>DATE_DIFFUSION</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CATÉGORIE" id="962023E2-1A2B-CDD2-E276-632BD4CFD84D">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMISSION</sourceObjSchema>
+<sourceObjName>CATÉGORIE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DURÉE" id="3B856551-A658-1975-E2D2-72A74457AA7C">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMISSION</sourceObjSchema>
+<sourceObjName>DURÉE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_A" id="282BF001-A721-763F-2E3D-A9ECC4BF519C">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EMISSION</sourceObjSchema>
+<sourceObjName>ID_A</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7517472C-36EA-DA12-8DDB-590988D153D0" name="EMISSION_PK">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>EMISSION_PK</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB5CA19F-FBB4-CDEA-FC7A-46D79D6F37DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C94D92F-F285-A15C-A9F0-D62D418AB2C8" schemaObject="261889A1-9314-E489-E351-D7DC0D969C31" name="EMISSION_PK">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>EMISSION_PK</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB5CA19F-FBB4-CDEA-FC7A-46D79D6F37DB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

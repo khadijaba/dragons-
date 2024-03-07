@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DB987134-F86B-18BA-0B3B-FB8EF3ABA19B" containerWithKeyObject="F0F16879-04BC-D3B6-3E00-4D23A9A623C6" localFKIndex="9D5B5F9B-6E44-A671-9A01-3A2147EA7827" name="ABONNE_CHAINES_FK">
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:31:08 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<referredTableLongName>KHADIJABA.CHAINES</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>2F6758E8-7EAF-E48C-F17B-B01C4689E03D</referredTableID>
+<keyObject>81928D6D-8778-6E0A-1DAF-D9AD95C98E27</keyObject>
+<referredKeyID>81928D6D-8778-6E0A-1DAF-D9AD95C98E27</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>ID_CHAINE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorColumn>D1471935-4120-6E9E-029A-7A6522A5CDFC</discriminatorColumn>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

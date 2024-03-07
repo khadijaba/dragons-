@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BAB68C4C-E061-034D-CEA0-A815447936C7" schemaObject="261889A1-9314-E489-E351-D7DC0D969C31" name="EQUIPEMENT">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>EQUIPEMENT</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_E" id="66D625EF-8D81-18BB-EEE4-EFE8A6211690">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EQUIPEMENT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DATEE" id="612D68F4-F0A5-77EA-FBD0-14BB4005E14D">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EQUIPEMENT</sourceObjSchema>
+<sourceObjName>DATEE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TYPE" id="7B89E045-C064-C394-67AC-2A551287CE6D">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EQUIPEMENT</sourceObjSchema>
+<sourceObjName>TYPE</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRIX" id="8158C446-11F0-1BEB-FA8A-1B8F959337E3">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>EQUIPEMENT</sourceObjSchema>
+<sourceObjName>PRIX</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B0117330-952A-A3C4-BFF1-DFE3001E7202" name="EQUIPEMENT_PK">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>EQUIPEMENT_PK</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:51 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66D625EF-8D81-18BB-EEE4-EFE8A6211690"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0339C656-2BAD-7689-1048-7726D3720384" schemaObject="261889A1-9314-E489-E351-D7DC0D969C31" name="EQUIPEMENT_PK">
+<sourceConnName>test-bd</sourceConnName>
+<sourceObjSchema>KHADIJABA</sourceObjSchema>
+<sourceObjName>EQUIPEMENT_PK</sourceObjName>
+<createdBy>benay</createdBy>
+<createdTime>2024-03-05 18:27:50 UTC</createdTime>
+<ownerDesignName>modele relationnel</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="66D625EF-8D81-18BB-EEE4-EFE8A6211690"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
