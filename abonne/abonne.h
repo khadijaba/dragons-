@@ -8,11 +8,13 @@
 #include <QTableWidget>
 
 class abonne {
-    QString nom,prenom,email,paiment;
+    QString nom,prenom,email,paiment,image_path;
     int id_a;
+    QPixmap photo;
+
 public:
     abonne(){}
-    abonne(int,QString,QString,QString,QString);
+    abonne(int,QString,QString,QString,QString,QString);
 
 
     int get_id_a(){return id_a;}
@@ -20,6 +22,8 @@ public:
     QString get_prenom(){return prenom;}
     QString get_email(){return email;}
     QString get_paiment(){return  paiment;}
+    QString get_image_path(){return image_path;}
+
 
     //setters
     void setnom(QString n){nom=n;}
@@ -27,16 +31,20 @@ public:
     void setemail(QString n){email=n;}
     void setpaiment(QString n){paiment=n;}
     void setid_a(int id_a){this->id_a=id_a;}
+    void setimage_path(QString image_path){this->image_path=image_path;}
+    void ajouterPhoto(const QPixmap &image);
 
     bool ajouter();
-    QSqlQueryModel * afficher();
+
     bool modifier();
     bool supprimer(int id_a);
      QSqlQueryModel* recupererAbonnes();
      bool importer_pdf(QPrinter &printer);
-      static int nombreTotalAbonnes();
-
-
+     static int nombreTotalAbonnes();
+     QSqlQueryModel* tri();
+      QSqlQueryModel *afficher();
+      QSqlQueryModel *statistiquePaiement();
+      QSqlQueryModel *tri(const QString &orderBy);
 
 
 

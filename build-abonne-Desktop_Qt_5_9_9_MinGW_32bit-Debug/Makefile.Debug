@@ -225,9 +225,6 @@ debug/moc_mainwindow.cpp: C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QMain
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QStackedWidget \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstackedwidget.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qframe.h \
 		../abonne/abonne.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QString \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlQuery \
@@ -369,6 +366,7 @@ debug/moc_mainwindow.cpp: C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QMain
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qlistview.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
@@ -377,11 +375,18 @@ debug/moc_mainwindow.cpp: C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QMain
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqltablemodel.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqlresult.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qtsqlversion.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlDatabase \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/QPrinter \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qprinter.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qtprintsupportglobal.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qtprintsupport-config.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagedpaintdevice.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagelayout.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagesize.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QTableWidget \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtablewidget.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtableview.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlDatabase \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug \
 		../abonne/mainwindow.h \
 		debug/moc_predefs.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/bin/moc.exe
@@ -659,7 +664,24 @@ debug/abonne.o: ../abonne/abonne.cpp ../abonne/abonne.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqltablemodel.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqlresult.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qtsqlversion.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/QPrinter \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qprinter.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qtprintsupportglobal.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qtprintsupport-config.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagedpaintdevice.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagelayout.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagesize.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QTableWidget \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtablewidget.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtableview.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/QTextDocument \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qtextdocument.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/QTextCursor \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qtextcursor.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qtextformat.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpen.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qtextoption.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\abonne.o ..\abonne\abonne.cpp
 
 debug/connexion.o: ../abonne/connexion.cpp ../abonne/connexion.h \
@@ -807,9 +829,6 @@ debug/main.o: ../abonne/main.cpp ../abonne/mainwindow.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QStackedWidget \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstackedwidget.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qframe.h \
 		../abonne/abonne.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QString \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlQuery \
@@ -951,6 +970,7 @@ debug/main.o: ../abonne/main.cpp ../abonne/mainwindow.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qlistview.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
@@ -959,13 +979,18 @@ debug/main.o: ../abonne/main.cpp ../abonne/mainwindow.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqltablemodel.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqlresult.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qtsqlversion.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlDatabase \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/QPrinter \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qprinter.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qtprintsupportglobal.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qtprintsupport-config.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagedpaintdevice.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagelayout.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagesize.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QTableWidget \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtablewidget.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtableview.h \
-		../abonne/connexion.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlError \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlDatabase \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QApplication \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qapplication.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qdesktopwidget.h \
@@ -973,7 +998,9 @@ debug/main.o: ../abonne/main.cpp ../abonne/mainwindow.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qinputmethod.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QMessageBox \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qmessagebox.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qdialog.h
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qdialog.h \
+		../abonne/connexion.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlError
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\abonne\main.cpp
 
 debug/mainwindow.o: ../abonne/mainwindow.cpp ../abonne/mainwindow.h \
@@ -1083,9 +1110,6 @@ debug/mainwindow.o: ../abonne/mainwindow.cpp ../abonne/mainwindow.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QPushButton \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qpushbutton.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QStackedWidget \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstackedwidget.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qframe.h \
 		../abonne/abonne.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QString \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlQuery \
@@ -1227,6 +1251,7 @@ debug/mainwindow.o: ../abonne/mainwindow.cpp ../abonne/mainwindow.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qstyle.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtabbar.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qrubberband.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qframe.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qlistview.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
@@ -1235,11 +1260,18 @@ debug/mainwindow.o: ../abonne/mainwindow.cpp ../abonne/mainwindow.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqltablemodel.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qsqlresult.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/qtsqlversion.h \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlDatabase \
-		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/QPrinter \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qprinter.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qtprintsupportglobal.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtPrintSupport/qtprintsupport-config.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagedpaintdevice.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagelayout.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtGui/qpagesize.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QTableWidget \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtablewidget.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/qtableview.h \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlDatabase \
+		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtCore/QDebug \
 		ui_mainwindow.h \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtWidgets/QTableView \
 		C:/Qt/Qt5.9.9/5.9.9/mingw53_32/include/QtSql/QSqlError \

@@ -6,6 +6,7 @@
 #include<QSqlDatabase>
 #include<QDebug>
 #include <QTableWidget>
+#include <QToolButton>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,6 +19,9 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    // Add this line inside the private section of the Ui::MainWindow class
+
+
 
 private slots:
     void on_ajouterButton_clicked();
@@ -25,18 +29,15 @@ private slots:
     void on_chercherButton_clicked();
 
     void on_modifierButton_clicked();
-
-
+    bool isValidPrenom(const QString &prenom);
+    bool isValidNom(const QString &nom);
     bool isValidEmail(const QString &email);
     void on_supprimerButton_clicked();
-    //void on_tabWidget_currentChanged(int index);
     void afficherAbonnes();
-
     void on_pdf_clicked();
-
     void on_stat_clicked();
-
     void on_triButton_clicked();
+    void on_imageButton_clicked();
 
 private:
     Ui::MainWindow *ui;
@@ -55,5 +56,7 @@ private:
           abonne* abonneToModify;
           QTableWidget *tableWidget;
            abonne *abonneModel;
+            QToolButton *triButton;
+
 };
 #endif // MAINWINDOW_H
