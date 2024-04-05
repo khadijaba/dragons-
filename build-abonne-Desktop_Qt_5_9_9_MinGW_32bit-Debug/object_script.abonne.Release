@@ -1,0 +1,17 @@
+INPUT(
+./release\abonne.o
+./release\connexion.o
+./release\email.o
+./release\emailadress.o
+./release\mailling.o
+./release\main.o
+./release\mainwindow.o
+./release\smtpclient.o
+./release\translator.o
+./release\translatordialog.o
+./release\qrc_abonne.o
+./release\moc_mailling.o
+./release\moc_mainwindow.o
+./release\moc_smtpclient.o
+./release\moc_translatordialog.o
+);

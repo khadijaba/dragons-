@@ -74,6 +74,7 @@ bool abonne::modifier() {
 }
 
 
+
 bool abonne::supprimer(int id_a) {
     QSqlQuery checkQuery;
     QString checkQueryString = QString("SELECT COUNT(*) FROM KHADIJABA.ABONNE WHERE ID_A = %1").arg(id_a);
@@ -177,12 +178,14 @@ int abonne::nombreTotalAbonnes() {
 }
 
 
-QSqlQueryModel* abonne::tri()
+QSqlQueryModel* abonne::tri(QString const &orderBy)
 {
     QSqlQueryModel* model = new QSqlQueryModel();
-    model->setQuery("SELECT * FROM KHADIJABA.ABONNEE ORDER BY id_a ASC");
+    QString query = QString("SELECT * FROM KHADIJABA.ABONNE ORDER BY %1").arg(orderBy);
+    model->setQuery(query);
     return model;
 }
+
 QSqlQueryModel* abonne::statistiquePaiement()
 {
     QSqlQueryModel* model = new QSqlQueryModel();
@@ -199,23 +202,7 @@ QSqlQueryModel* abonne::statistiquePaiement()
 
     return model;
 }
-QSqlQueryModel *abonne::tri(const QString &orderBy)
-{
-    QSqlQueryModel *model = new QSqlQueryModel();
 
-    QSqlQuery query;
-    QString queryString = "SELECT * FROM abonne ORDER BY " + orderBy;
-    query.prepare(queryString);
-
-    if (query.exec()) {
-        model->setQuery(query);
-        return model;
-    } else {
-        qDebug() << "Error in tri query:" << query.lastError().text();
-        delete model;
-        return nullptr;
-    }
-}
 void abonne::ajouterPhoto(const QPixmap &image) {
     photo = image;
 }

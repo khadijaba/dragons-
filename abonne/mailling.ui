@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mailling</class>
+ <widget class="QMainWindow" name="mailling">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>900</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1100</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1100</width>
+    <height>900</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Style pour la fenêtre principale */
+mailling {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #ff99cc, stop:1 #99ccff); /* Dégradé rose à bleu */
+}
+
+/* Style pour les labels */
+QLabel {
+    color: #ff66cc; /* Rose vif */
+    font-size: 14pt; /* Taille de police */
+}
+
+/* Style pour les groupes */
+QGroupBox {
+    border: 3px solid #ff66cc; /* Bordure rose vif */
+    border-radius: 30px; /* Coins légèrement arrondis */
+    background-color: #ffffff; /* Blanc */
+    margin-top: 10px; /* Marge supérieure */
+	font: 11pt &quot;Times New Roman&quot;;
+}
+
+/* Style pour les champs de saisie */
+QLineEdit {
+    padding: 8px; /* Remplissage interne */
+    border: 1px solid #ff66cc; /* Bordure rose vif */
+    border-radius: 10px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Gris très clair */
+	font: 11pt &quot;Times New Roman&quot;;
+}
+
+/* Style pour les champs de saisie au survol */
+QLineEdit:hover {
+    border: 2px solid #ff99cc; /* Bordure rose clair au survol */
+}
+
+/* Style pour le bouton */
+QPushButton {
+    padding: 8px 20px; /* Remplissage interne (haut/bas gauche/droite) */
+    border: 2px solid ; /* Bordure rose vif */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #3399ff; /* Bleu vif */
+    color: #ffffff; /* Blanc */
+    font-size: 14pt; /* Taille de police */
+}
+
+/* Style pour le bouton au survol */
+QPushButton:hover {
+    background-color: #66ccff; /* Bleu clair au survol */
+}
+
+/* Style pour le bouton au clic */
+QPushButton:pressed {
+    background-color: #0066cc; /* Bleu foncé au clic */
+}
+
+/* Style pour les QSpinBox */
+QSpinBox {
+    padding: 4px; /* Remplissage interne */
+    border: 1px solid #ff66cc; /* Bordure rose vif */
+    border-radius: 5px; /* Coins arrondis */
+    background-color: #f9f9f9; /* Gris très clair */
+    font-size: 12pt; /* Taille de police */
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>50</y>
+      <width>971</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Informations de Connexion</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+     </property>
+     <property name="text">
+      <string>EMAIL :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>150</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+     </property>
+     <property name="text">
+      <string>host</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>230</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+     </property>
+     <property name="text">
+      <string>FROM : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>80</y>
+       <width>151</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+     </property>
+     <property name="text">
+      <string>PASSWORD : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>140</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+     </property>
+     <property name="text">
+      <string>port :</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditEmailCredentials_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>81</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>benayedkhadija5@gmail.com</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditHost_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>143</y>
+       <width>281</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>smtp.gmail.com</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditEmailFrom_2">
+     <property name="geometry">
+      <rect>
+       <x>120</x>
+       <y>230</y>
+       <width>391</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditPasswordCredentials_2">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>80</y>
+       <width>311</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>exgu b gel ydw g ityw </string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_port_2">
+     <property name="geometry">
+      <rect>
+       <x>630</x>
+       <y>140</y>
+       <width>311</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>465</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButtonSend">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>720</y>
+       <width>261</width>
+       <height>43</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Envoyer</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditEmailTo_2">
+     <property name="geometry">
+      <rect>
+       <x>460</x>
+       <y>330</y>
+       <width>451</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>310</x>
+       <y>330</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+     </property>
+     <property name="text">
+      <string>TO : </string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>630</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Contenue :</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>500</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 14pt &quot;Times New Roman&quot;;</string>
+     </property>
+     <property name="text">
+      <string>sujet  :</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEditContent_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>590</y>
+       <width>661</width>
+       <height>101</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEditSubject_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>490</y>
+       <width>661</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>10</y>
+      <width>900</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 24pt &quot;Arial&quot;;</string>
+    </property>
+    <property name="text">
+     <string>Envoi de Mail</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1100</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

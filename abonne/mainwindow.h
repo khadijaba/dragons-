@@ -3,11 +3,18 @@
 #include <QMainWindow>
 #include <QPushButton>
 #include "abonne.h"
+#include "connexion.h"
 #include<QSqlDatabase>
 #include<QDebug>
 #include <QTableWidget>
 #include <QToolButton>
-
+#include<QtCore>
+#include<QtGui>
+#include<QtWidgets>
+#include<QtCharts>
+#include "smtpclient.h"
+#include "emailadress.h"
+#include "mailling.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -20,7 +27,8 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
     // Add this line inside the private section of the Ui::MainWindow class
-
+signals:
+    void notificationSignal(const QString &message);
 
 
 private slots:
@@ -38,8 +46,23 @@ private slots:
     void on_stat_clicked();
     void on_triButton_clicked();
     void on_imageButton_clicked();
+    void displayPaymentStatistics();
+
+    void on_refresh_clicked();
+    void on_lineEdit_search_textChanged(const QString &text);
+
+
+
+
+
+    void on_MAIL_abonne_clicked();
+
+    void on_openTranslatorDialogButton_clicked();
+    void openTranslatorDialog();
 
 private:
+    SMTPClient *smtp;
+    mailling *mail ;
     Ui::MainWindow *ui;
     QPushButton *ajouterButton;
         QPushButton *supprimerButton;
@@ -57,6 +80,7 @@ private:
           QTableWidget *tableWidget;
            abonne *abonneModel;
             QToolButton *triButton;
+
 
 };
 #endif // MAINWINDOW_H

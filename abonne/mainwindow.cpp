@@ -4,17 +4,30 @@
 #include<QSqlQuery>
 #include<QTableView>
 #include<QDebug>
-#include <QSqlError>
+#include "smtpclient.h"
+#include "emailadress.h"
 #include<QMessageBox>
 #include <QPainter>
 #include <QFileDialog>
 #include "abonne.h"
 #include<QTableWidget>
+#include <QPieSeries>
+#include <QSqlQueryModel>
+#include <QChartView>
+#include <QChart>
+#include <QTimer>
+#include "mailling.h"
+#include "translatordialog.h"
+#include "translator.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    QTimer *timer = new QTimer(this);
+        connect(timer, SIGNAL(timeout()), this, SLOT(surveillerConcurrence()));
+        timer->start(24 * 3600 * 1000);
 
 //configuration de la base
     QSqlDatabase db = QSqlDatabase::addDatabase("QOCI");
@@ -33,10 +46,11 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->chercherButton, SIGNAL(clicked()), this, SLOT(on_chercherButton_clicked()));
     connect(ui->modifierButton, SIGNAL(clicked()), this, SLOT(on_modifierButton_clicked()));
     connect(ui->supprimerButton, SIGNAL(clicked()), this, SLOT(on_supprimerButton_clicked()));
-    connect(ui->stat, SIGNAL(clicked()), this, SLOT(on_stat_clicked()));
-     connect(ui->imageButton, SIGNAL(clicked()), this, SLOT(on_imageButton_clicked()));
-
-
+    connect(ui->stat, SIGNAL(clicked()), this, SLOT(displayPaymentStatistics()));
+    connect(ui->imageButton, SIGNAL(clicked()), this, SLOT(on_imageButton_clicked()));
+    connect(ui->lineEdit_search, &QLineEdit::textChanged, this, &MainWindow::on_lineEdit_search_textChanged);
+    connect(ui->refresh, &QPushButton::clicked, this, &MainWindow::on_refresh_clicked);
+    connect(ui->openTranslatorDialogButton, &QPushButton::clicked, this, &MainWindow::openTranslatorDialog);
 
     ui->comboBox->addItem("carte bancaire");
     ui->comboBox->addItem("cheque");
@@ -91,6 +105,7 @@ void MainWindow::on_ajouterButton_clicked()
             ui->lineEdit_prenom->clear();
             ui->lineEdit_email->clear();
             ui->imagePathLabel->clear();
+
 
        } else {
             QMessageBox::critical(this, tr("Erreur"), tr("Ajout non effectué. Veuillez vérifier les données."));
@@ -192,17 +207,19 @@ void MainWindow::on_chercherButton_clicked()
                 ui->lineEdit_idChercher->setEnabled(false);// Désactiver la modification de l'ID
 
 
-               break; 
+               break;
            }
        }
 
        if (!found) {
-           
+
            qDebug() << "Abonné avec ID_A" << idToSearch << "non trouvé.";
-          
+
        }
 
 }
+
+
 
 void MainWindow::on_supprimerButton_clicked()
 {
@@ -252,100 +269,80 @@ void MainWindow::on_pdf_clicked()
 
         QPageLayout pageLayout;
         pageLayout.setMode(QPageLayout::StandardMode);
-                pageLayout.setOrientation(QPageLayout::Portrait);
-                pageLayout.setPageSize(QPageSize(QPageSize::A4));
-                pageLayout.setUnits(QPageLayout::Millimeter);
-                pageLayout.setMargins(QMarginsF(pageMargins));
-                printer.setPageLayout(pageLayout);
+        pageLayout.setOrientation(QPageLayout::Portrait);
+        pageLayout.setPageSize(QPageSize(QPageSize::A4));
+        pageLayout.setUnits(QPageLayout::Millimeter);
+        pageLayout.setMargins(QMarginsF(pageMargins));
+        printer.setPageLayout(pageLayout);
 
         QPainter painter;
         painter.begin(&printer);
 
-        QString logoPath = "C:/Users/benay/OneDrive/Bureau/val1/abonne/images/LOGO DRAGONS.png";
-                QPixmap logo(logoPath);
-                if (!logo.isNull()) {
-                    QRectF logoRect(20, 20, 200, 100); // Ajuster les dimensions du rectangle pour agrandir le logo
-                    painter.drawPixmap(logoRect.toRect(), logo.scaled(logoRect.size().toSize(), Qt::KeepAspectRatio));
-                } else {
-                    qDebug() << "Error: Logo is null or could not be loaded.";
-                }
+        QString logoPath = "C:/Users/benay/OneDrive/Bureau/val1/abonne/images/LOGO_DRAGONS.png";
+        QPixmap logo(logoPath);
+        if (!logo.isNull()) {
+            QRectF logoRect(20, 20, 200, 100);
+            painter.drawPixmap(logoRect.toRect(), logo.scaled(logoRect.size().toSize(), Qt::KeepAspectRatio));
+        } else {
+            qDebug() << "Error: Logo is null or could not be loaded.";
+            painter.drawText(20, 20, "Error: Logo is null or could not be loaded.");
+        }
 
+        // Afficher la date et l'heure actuelles
+        QDateTime currentDateTime = QDateTime::currentDateTime();
+        QString currentDateTimeStr = currentDateTime.toString("yyyy-MM-dd HH:mm:ss");
+        painter.drawText(20, 140, "Date d'enregistrement: " + currentDateTimeStr);
 
+        // Afficher le titre
+        QFont titleFont;
+        titleFont.setPointSize(16);
+        painter.setFont(titleFont);
+        QRectF titleRect(40, 160, 800, 100);
+        painter.drawText(titleRect, "La liste des abonnés", QTextOption(Qt::AlignLeft));
 
-        // Display the title
-                QFont titleFont;
-                        titleFont.setPointSize(16);
-                        painter.setFont(titleFont);
-                        QRectF titleRect(40, 160, 800, 100);
-                        painter.drawText(titleRect, "La liste des abonnés", QTextOption(Qt::AlignLeft));
+        // Afficher la liste des abonnés
+        abonne a;
+        QSqlQueryModel *model = a.afficher();
+        int rows = model->rowCount();
+        int cols = model->columnCount();
+        int cellWidth = 150;
+        int cellHeight = 80;
+        int tableX = 80;
+        int tableY = 200;
 
-        // Display the list of subscribers
-                        abonne a;
-                                QSqlQueryModel *model = a.afficher();
-                                int rows = model->rowCount();
-                                int cols = model->columnCount();
-                                int cellWidth = 150;
-                                int cellHeight = 80;
-                                int tableX = 80;
-                                int tableY = 200;
-
-
-                                for (int row = 0; row < rows; ++row) {
-                                          for (int col = 0; col < cols; ++col) {
-                                              QString cellValue = model->data(model->index(row, col)).toString();
-                                              QRectF cellRect(tableX + col * cellWidth, tableY + row * cellHeight, cellWidth, cellHeight);
-                                              painter.drawRect(cellRect);
-                                              painter.drawText(cellRect, Qt::AlignCenter, cellValue);
-                                          }
-                                      }
-
-                                      painter.end();
-                                  }
-                              }
-
-void  MainWindow::on_stat_clicked(){
-    abonne a;
-    QSqlQueryModel *model = a.statistiquePaiement();
-
-    //  valide
-    if (model) {
-        ui->tableWidget->clearContents();
-
-        // verifier que QTableWidget a suffisamment de lignes et de colonnes
-        ui->tableWidget->setRowCount(model->rowCount());
-        ui->tableWidget->setColumnCount(model->columnCount());
-
-       // définissez les éléments du QTableWidget
-        for (int row = 0; row < model->rowCount(); ++row) {
-            for (int col = 0; col < model->columnCount(); ++col) {
+        for (int row = 0; row < rows; ++row) {
+            for (int col = 0; col < cols; ++col) {
                 QString cellValue = model->data(model->index(row, col)).toString();
-                QTableWidgetItem *item = new QTableWidgetItem(cellValue);
-                ui->tableWidget->setItem(row, col, item);
+                QRectF cellRect(tableX + col * cellWidth, tableY + row * cellHeight, cellWidth, cellHeight);
+                painter.drawRect(cellRect);
+                painter.drawText(cellRect, Qt::AlignCenter, cellValue);
             }
         }
 
-        // Set the style sheet for ui->stat button
-        ui->stat->setStyleSheet("background-color: lightblue; color: black; border: 2px solid darkblue;");
-
-
+        painter.end();
     }
 }
-
-
-
-
 
 void MainWindow::on_triButton_clicked()
 {
     QString orderBy;
-    if (ui->radioButtonIdAsc->isChecked()) {
+    int index = ui->comboBoxTri->currentIndex();
+
+    switch (index) {
+    case 0:
         orderBy = "id_a ASC";
-    } else if (ui->radioButtonIdDesc->isChecked()) {
+        break;
+    case 1:
         orderBy = "id_a DESC";
-    } else if (ui->radioButtonNom->isChecked()) {
+        break;
+    case 2:
         orderBy = "nom ASC";
-    } else {
-        qDebug() << "clickez!";
+        break;
+    case 3:
+        orderBy = "nom DESC";
+        break;
+    default:
+        qDebug() << "Erreur: Option de tri non gérée.";
         return;
     }
 
@@ -368,10 +365,49 @@ void MainWindow::on_triButton_clicked()
 
         delete model;
     } else {
-        qDebug() << "Error getting sorted data";
+        qDebug() << "Erreur lors de l'obtention des données triées.";
     }
 }
 
+void MainWindow::displayPaymentStatistics() {
+    abonne a;
+    QSqlQueryModel *model = a.statistiquePaiement();
+
+    if (model) {
+        QPieSeries *series = new QPieSeries();
+        // Ajouter des données au graphique
+        for (int row = 0; row < model->rowCount(); ++row) {
+            QString payment = model->index(row, 0).data().toString();
+            int count = model->index(row, 1).data().toInt();
+            series->append(payment, count);
+        }
+
+        // Créer un graphique à secteurs et ajouter la série de données
+        QChart *chart = new QChart();
+        chart->addSeries(series);
+        chart->setTitle("Statistiques de paiement");
+
+        // Créer une vue de graphique et l'afficher
+        QChartView *chartView = new QChartView(chart);
+        chartView->setRenderHint(QPainter::Antialiasing);
+        chartView->resize(400, 300); // Ajustez la taille du graphique selon vos besoins
+
+        // Afficher le graphique dans une nouvelle fenêtre ou un widget approprié
+        chartView->show();
+    }
+}
+void MainWindow::on_lineEdit_search_textChanged(const QString &text)
+{
+
+    QString filterText = text.toLower();
+    int rowCount = ui->tableWidget->rowCount();
+
+    for (int row = 0; row < rowCount; ++row) {
+        QString nom = ui->tableWidget->item(row, 1)->text().toLower();
+        bool matches = nom.contains(filterText);
+        ui->tableWidget->setRowHidden(row, !matches);
+    }
+}
 void MainWindow::on_imageButton_clicked()
 {
 
@@ -386,3 +422,82 @@ void MainWindow::on_imageButton_clicked()
             }
         }
     }
+void MainWindow::on_refresh_clicked()
+{
+    afficherAbonnes();
+}
+
+void MainWindow::on_stat_clicked()
+{
+    QPieSeries *series =new QPieSeries();
+
+    series->setHoleSize(0.25);
+
+    /*QPieSlice * Slice_1= series->append("carte bancaire",30);
+    Slice_1->setExploded(true);
+    Slice_1->setLabelVisible(true);
+    Slice_1->setPen(QPen(Qt::blue,1));
+    Slice_1->setBrush(Qt::cyan);
+
+    QPieSlice * Slice_2=series->append("espece" ,30);
+    Slice_2->setExploded(true);
+    Slice_2->setLabelVisible(true);
+    Slice_2->setPen(QPen(Qt::cyan,1));
+    Slice_2->setBrush(Qt::cyan);
+
+
+    QPieSlice * Slice_3=series->append("cheque",40);
+    Slice_3->setExploded(true);
+    Slice_3->setLabelVisible(true);
+    Slice_3->setPen(QPen(Qt::red,1));
+    Slice_3->setBrush(Qt::cyan);*/
+
+   QChart *chart = new QChart();
+   chart->addSeries(series);
+   chart->legend()->setVisible(true);
+   chart->setTitle("statistique des abonnes ");
+   //chart->setTheme(QChart::ChartTheme::ChartThemeDark);
+   chart->legend()->setAlignment(Qt::AlignBottom);
+   chart->setVisible(true);
+
+   QChartView *chartview = new QChartView(chart);
+   chartview->setRenderHint(QPainter::Antialiasing);
+   chartview->setVisible(true);
+   setCentralWidget(chartview);
+
+   displayPaymentStatistics();
+
+}
+
+
+
+
+
+
+void MainWindow::on_MAIL_abonne_clicked()
+{
+    mail = new mailling(this);
+          mail->show();
+}
+
+void TranslatorDialog::on_translateButton_clicked() {
+    QString sourceText = ui->sourceTextEdit->toPlainText();
+    if (sourceText.isEmpty()) {
+        qDebug() << "Aucun texte à traduire.";
+        return;
+    }
+
+    QString sourceLang = ui->sourceLanguageComboBox->currentData().toString();
+    QString targetLang = ui->targetLanguageComboBox->currentData().toString();
+
+    // Supposons que la classe Translator ait une méthode translate prenant en compte les langues
+    Translator translator;
+    QString translatedText = translator.translate(sourceText, sourceLang, targetLang);
+
+    ui->targetTextEdit->setPlainText(translatedText);
+}
+
+void MainWindow::openTranslatorDialog() {
+    TranslatorDialog dialog(this); // Assurez-vous que TranslatorDialog est inclus.
+    dialog.exec();
+}

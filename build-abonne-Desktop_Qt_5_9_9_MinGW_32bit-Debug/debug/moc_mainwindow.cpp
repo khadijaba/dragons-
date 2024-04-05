@@ -21,8 +21,8 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[17];
-    char stringdata0[262];
+    QByteArrayData data[26];
+    char stringdata0[451];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -32,32 +32,46 @@ struct qt_meta_stringdata_MainWindow_t {
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
-QT_MOC_LITERAL(1, 11, 24), // "on_ajouterButton_clicked"
-QT_MOC_LITERAL(2, 36, 0), // ""
-QT_MOC_LITERAL(3, 37, 25), // "on_chercherButton_clicked"
-QT_MOC_LITERAL(4, 63, 25), // "on_modifierButton_clicked"
-QT_MOC_LITERAL(5, 89, 13), // "isValidPrenom"
-QT_MOC_LITERAL(6, 103, 6), // "prenom"
-QT_MOC_LITERAL(7, 110, 10), // "isValidNom"
-QT_MOC_LITERAL(8, 121, 3), // "nom"
-QT_MOC_LITERAL(9, 125, 12), // "isValidEmail"
-QT_MOC_LITERAL(10, 138, 5), // "email"
-QT_MOC_LITERAL(11, 144, 26), // "on_supprimerButton_clicked"
-QT_MOC_LITERAL(12, 171, 15), // "afficherAbonnes"
-QT_MOC_LITERAL(13, 187, 14), // "on_pdf_clicked"
-QT_MOC_LITERAL(14, 202, 15), // "on_stat_clicked"
-QT_MOC_LITERAL(15, 218, 20), // "on_triButton_clicked"
-QT_MOC_LITERAL(16, 239, 22) // "on_imageButton_clicked"
+QT_MOC_LITERAL(1, 11, 18), // "notificationSignal"
+QT_MOC_LITERAL(2, 30, 0), // ""
+QT_MOC_LITERAL(3, 31, 7), // "message"
+QT_MOC_LITERAL(4, 39, 24), // "on_ajouterButton_clicked"
+QT_MOC_LITERAL(5, 64, 25), // "on_chercherButton_clicked"
+QT_MOC_LITERAL(6, 90, 25), // "on_modifierButton_clicked"
+QT_MOC_LITERAL(7, 116, 13), // "isValidPrenom"
+QT_MOC_LITERAL(8, 130, 6), // "prenom"
+QT_MOC_LITERAL(9, 137, 10), // "isValidNom"
+QT_MOC_LITERAL(10, 148, 3), // "nom"
+QT_MOC_LITERAL(11, 152, 12), // "isValidEmail"
+QT_MOC_LITERAL(12, 165, 5), // "email"
+QT_MOC_LITERAL(13, 171, 26), // "on_supprimerButton_clicked"
+QT_MOC_LITERAL(14, 198, 15), // "afficherAbonnes"
+QT_MOC_LITERAL(15, 214, 14), // "on_pdf_clicked"
+QT_MOC_LITERAL(16, 229, 15), // "on_stat_clicked"
+QT_MOC_LITERAL(17, 245, 20), // "on_triButton_clicked"
+QT_MOC_LITERAL(18, 266, 22), // "on_imageButton_clicked"
+QT_MOC_LITERAL(19, 289, 24), // "displayPaymentStatistics"
+QT_MOC_LITERAL(20, 314, 18), // "on_refresh_clicked"
+QT_MOC_LITERAL(21, 333, 30), // "on_lineEdit_search_textChanged"
+QT_MOC_LITERAL(22, 364, 4), // "text"
+QT_MOC_LITERAL(23, 369, 22), // "on_MAIL_abonne_clicked"
+QT_MOC_LITERAL(24, 392, 37), // "on_openTranslatorDialogButton..."
+QT_MOC_LITERAL(25, 430, 20) // "openTranslatorDialog"
 
     },
-    "MainWindow\0on_ajouterButton_clicked\0"
-    "\0on_chercherButton_clicked\0"
+    "MainWindow\0notificationSignal\0\0message\0"
+    "on_ajouterButton_clicked\0"
+    "on_chercherButton_clicked\0"
     "on_modifierButton_clicked\0isValidPrenom\0"
     "prenom\0isValidNom\0nom\0isValidEmail\0"
     "email\0on_supprimerButton_clicked\0"
     "afficherAbonnes\0on_pdf_clicked\0"
     "on_stat_clicked\0on_triButton_clicked\0"
-    "on_imageButton_clicked"
+    "on_imageButton_clicked\0displayPaymentStatistics\0"
+    "on_refresh_clicked\0on_lineEdit_search_textChanged\0"
+    "text\0on_MAIL_abonne_clicked\0"
+    "on_openTranslatorDialogButton_clicked\0"
+    "openTranslatorDialog"
 };
 #undef QT_MOC_LITERAL
 
@@ -67,37 +81,55 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      12,   14, // methods
+      19,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
        0,       // flags
-       0,       // signalCount
+       1,       // signalCount
+
+ // signals: name, argc, parameters, tag, flags
+       1,    1,  109,    2, 0x06 /* Public */,
 
  // slots: name, argc, parameters, tag, flags
-       1,    0,   74,    2, 0x08 /* Private */,
-       3,    0,   75,    2, 0x08 /* Private */,
-       4,    0,   76,    2, 0x08 /* Private */,
-       5,    1,   77,    2, 0x08 /* Private */,
-       7,    1,   80,    2, 0x08 /* Private */,
-       9,    1,   83,    2, 0x08 /* Private */,
-      11,    0,   86,    2, 0x08 /* Private */,
-      12,    0,   87,    2, 0x08 /* Private */,
-      13,    0,   88,    2, 0x08 /* Private */,
-      14,    0,   89,    2, 0x08 /* Private */,
-      15,    0,   90,    2, 0x08 /* Private */,
-      16,    0,   91,    2, 0x08 /* Private */,
+       4,    0,  112,    2, 0x08 /* Private */,
+       5,    0,  113,    2, 0x08 /* Private */,
+       6,    0,  114,    2, 0x08 /* Private */,
+       7,    1,  115,    2, 0x08 /* Private */,
+       9,    1,  118,    2, 0x08 /* Private */,
+      11,    1,  121,    2, 0x08 /* Private */,
+      13,    0,  124,    2, 0x08 /* Private */,
+      14,    0,  125,    2, 0x08 /* Private */,
+      15,    0,  126,    2, 0x08 /* Private */,
+      16,    0,  127,    2, 0x08 /* Private */,
+      17,    0,  128,    2, 0x08 /* Private */,
+      18,    0,  129,    2, 0x08 /* Private */,
+      19,    0,  130,    2, 0x08 /* Private */,
+      20,    0,  131,    2, 0x08 /* Private */,
+      21,    1,  132,    2, 0x08 /* Private */,
+      23,    0,  135,    2, 0x08 /* Private */,
+      24,    0,  136,    2, 0x08 /* Private */,
+      25,    0,  137,    2, 0x08 /* Private */,
+
+ // signals: parameters
+    QMetaType::Void, QMetaType::QString,    3,
 
  // slots: parameters
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
-    QMetaType::Bool, QMetaType::QString,    6,
     QMetaType::Bool, QMetaType::QString,    8,
     QMetaType::Bool, QMetaType::QString,   10,
+    QMetaType::Bool, QMetaType::QString,   12,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void,
+    QMetaType::Void, QMetaType::QString,   22,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -111,22 +143,38 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         MainWindow *_t = static_cast<MainWindow *>(_o);
         Q_UNUSED(_t)
         switch (_id) {
-        case 0: _t->on_ajouterButton_clicked(); break;
-        case 1: _t->on_chercherButton_clicked(); break;
-        case 2: _t->on_modifierButton_clicked(); break;
-        case 3: { bool _r = _t->isValidPrenom((*reinterpret_cast< const QString(*)>(_a[1])));
+        case 0: _t->notificationSignal((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 1: _t->on_ajouterButton_clicked(); break;
+        case 2: _t->on_chercherButton_clicked(); break;
+        case 3: _t->on_modifierButton_clicked(); break;
+        case 4: { bool _r = _t->isValidPrenom((*reinterpret_cast< const QString(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 4: { bool _r = _t->isValidNom((*reinterpret_cast< const QString(*)>(_a[1])));
+        case 5: { bool _r = _t->isValidNom((*reinterpret_cast< const QString(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 5: { bool _r = _t->isValidEmail((*reinterpret_cast< const QString(*)>(_a[1])));
+        case 6: { bool _r = _t->isValidEmail((*reinterpret_cast< const QString(*)>(_a[1])));
             if (_a[0]) *reinterpret_cast< bool*>(_a[0]) = std::move(_r); }  break;
-        case 6: _t->on_supprimerButton_clicked(); break;
-        case 7: _t->afficherAbonnes(); break;
-        case 8: _t->on_pdf_clicked(); break;
-        case 9: _t->on_stat_clicked(); break;
-        case 10: _t->on_triButton_clicked(); break;
-        case 11: _t->on_imageButton_clicked(); break;
+        case 7: _t->on_supprimerButton_clicked(); break;
+        case 8: _t->afficherAbonnes(); break;
+        case 9: _t->on_pdf_clicked(); break;
+        case 10: _t->on_stat_clicked(); break;
+        case 11: _t->on_triButton_clicked(); break;
+        case 12: _t->on_imageButton_clicked(); break;
+        case 13: _t->displayPaymentStatistics(); break;
+        case 14: _t->on_refresh_clicked(); break;
+        case 15: _t->on_lineEdit_search_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
+        case 16: _t->on_MAIL_abonne_clicked(); break;
+        //case 17: _t->on_openTranslatorDialogButton_clicked(); break;
+        case 18: _t->openTranslatorDialog(); break;
         default: ;
+        }
+    } else if (_c == QMetaObject::IndexOfMethod) {
+        int *result = reinterpret_cast<int *>(_a[0]);
+        {
+            typedef void (MainWindow::*_t)(const QString & );
+            if (*reinterpret_cast<_t *>(_a[1]) == static_cast<_t>(&MainWindow::notificationSignal)) {
+                *result = 0;
+                return;
+            }
         }
     }
 }
@@ -156,15 +204,22 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 12)
+        if (_id < 19)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 12;
+        _id -= 19;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 12)
+        if (_id < 19)
             *reinterpret_cast<int*>(_a[0]) = -1;
-        _id -= 12;
+        _id -= 19;
     }
     return _id;
+}
+
+// SIGNAL 0
+void MainWindow::notificationSignal(const QString & _t1)
+{
+    void *_a[] = { nullptr, const_cast<void*>(reinterpret_cast<const void*>(&_t1)) };
+    QMetaObject::activate(this, &staticMetaObject, 0, _a);
 }
 QT_WARNING_POP
 QT_END_MOC_NAMESPACE
