@@ -15,7 +15,7 @@ TranslatorDialog::TranslatorDialog(QWidget *parent) :
     connect(ui->translateButton, &QPushButton::clicked, this, &TranslatorDialog::on_translateButton_clicked);
 }
 
-TranslatorDialog::~TranslatorDialog() { // Assurez-vous d'inclure le destructeur pour nettoyer l'instance de l'UI.
+TranslatorDialog::~TranslatorDialog() {
     delete ui;
 }
 

@@ -5,7 +5,7 @@
 
 class Translator {
 public:
-    Translator(); // Constructeur déclaré mais pas défini comme constexpr
+    Translator();
     QString translate(const QString& text, const QString& fromLang, const QString& toLang);
 };
 

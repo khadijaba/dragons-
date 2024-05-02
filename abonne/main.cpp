@@ -2,9 +2,13 @@
 #include <QApplication>
 #include <QMessageBox>
 #include "connexion.h"
+#include<QTranslator>
+#include <QWidget>
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
+    QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
+    QApplication app(argc, argv);
+
     MainWindow w;
     Connexion c;
     bool test=c.createconnect();
@@ -22,5 +26,5 @@ int main(int argc, char *argv[])
 
 
 
-    return a.exec();
+    return app.exec();
 }

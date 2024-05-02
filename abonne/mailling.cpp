@@ -8,9 +8,9 @@ mailling::mailling(QWidget *parent) :
     ui->setupUi(this);
 
     client_ = NULL;
-    ui->lineEditEmailCredentials_2->hide();
+    //ui->lineEditEmailCredentials_2->hide();
     ui->lineEditPasswordCredentials_2->setEchoMode(QLineEdit::Password);
-    ui->lineEditPasswordCredentials_2->hide();
+    //ui->lineEditPasswordCredentials_2->hide();
        // Connect all signals and slots
        connect(ui->pushButtonSend, SIGNAL(clicked(bool)), this, SLOT(sendEmail()));
 }

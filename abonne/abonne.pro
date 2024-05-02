@@ -15,9 +15,10 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
-
+qt_create_translation(QM_FILES ${CMAKE_SOURCE_DIR} simplequick.ts)
 SOURCES += \
     abonne.cpp \
+    arduino.cpp \
     connexion.cpp \
     email.cpp \
     emailadress.cpp \
@@ -30,6 +31,7 @@ SOURCES += \
 
 HEADERS += \
     abonne.h \
+    arduino.h \
     connexion.h \
     email.h \
     emailadress.h \

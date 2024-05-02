@@ -83,6 +83,20 @@ public:
         label->setText(QString());
         translateButton->setText(QApplication::translate("TranslatorDialog", "Traduire", Q_NULLPTR));
         label_6->setText(QApplication::translate("TranslatorDialog", "traduction:", Q_NULLPTR));
+        sourceLanguageComboBox->clear();
+        sourceLanguageComboBox->insertItems(0, QStringList()
+         << QApplication::translate("TranslatorDialog", "francais", Q_NULLPTR)
+         << QApplication::translate("TranslatorDialog", "anglais", Q_NULLPTR)
+         << QApplication::translate("TranslatorDialog", "arabe", Q_NULLPTR)
+         << QApplication::translate("TranslatorDialog", "espagnol ", Q_NULLPTR)
+        );
+        targetLanguageComboBox->clear();
+        targetLanguageComboBox->insertItems(0, QStringList()
+         << QApplication::translate("TranslatorDialog", "francais", Q_NULLPTR)
+         << QApplication::translate("TranslatorDialog", "anglais", Q_NULLPTR)
+         << QApplication::translate("TranslatorDialog", "arabe", Q_NULLPTR)
+         << QApplication::translate("TranslatorDialog", "espagnole", Q_NULLPTR)
+        );
         label_2->setText(QApplication::translate("TranslatorDialog", "choisir la langue", Q_NULLPTR));
         label_3->setText(QApplication::translate("TranslatorDialog", "choisir la langue", Q_NULLPTR));
     } // retranslateUi

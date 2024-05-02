@@ -15,6 +15,7 @@
 #include "smtpclient.h"
 #include "emailadress.h"
 #include "mailling.h"
+#include"arduino.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -60,6 +61,10 @@ private slots:
     void on_openTranslatorDialogButton_clicked();
     void openTranslatorDialog();
 
+    void on_tableWidget_cellActivated(int row, int column);
+
+    void on_ajouterButton_2_clicked();
+
 private:
     SMTPClient *smtp;
     mailling *mail ;
@@ -81,6 +86,7 @@ private:
            abonne *abonneModel;
             QToolButton *triButton;
 
-
+            Arduino Ar;
+            QByteArray data;
 };
 #endif // MAINWINDOW_H

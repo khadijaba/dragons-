@@ -419,6 +419,81 @@ QLineEdit::hover {
       </property>
      </widget>
     </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>arduino</string>
+     </attribute>
+     <widget class="QLineEdit" name="idarduino">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>300</y>
+        <width>291</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid #3498db; /* Bordure bleue */
+    border-radius: 15px; /* Coins arrondis plus prononcés */
+    padding: 5px 15px; /* Espacement interne */
+    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu foncé avec plus de transparence */
+    selection-background-color: #2980b9; /* Couleur de fond de la sélection */
+    color: #ecf0f1; /* Couleur du texte */
+}
+
+QLineEdit:focus {
+    border: 2px solid #2980b9; /* Bordure bleue plus foncée pendant le focus */
+    color: #ecf0f1; /* Couleur du texte pendant le focus */
+    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */
+    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* Légère ombre lorsqu'en focus */
+}
+
+QLineEdit::hover {
+    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu foncé plus clair avec plus de transparence lorsqu'il est survolé */
+}
+
+QLineEdit::disabled {
+    color: #bdc3c7; /* Couleur du texte lorsque désactivé */
+    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu foncé avec plus de transparence lorsqu'il est désactivé */
+    border: 2px solid #566573; /* Bordure gris foncé lorsqu'il est désactivé */
+}
+
+QLineEdit::placeholder {
+    color: #bdc3c7; /* Couleur du texte de l'espace réservé */
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ajouterButton_2">
+      <property name="geometry">
+       <rect>
+        <x>610</x>
+        <y>290</y>
+        <width>121</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* QPushButton style */
+QPushButton {
+    background-color: #87CEEB;    /* Light blue background color */
+    color: white;                 /* White text color */
+    border: 2px solid #87CEEB;    /* Light blue border */
+    border-radius: 5px;           /* Rounded corners */
+    padding: 5px 10px;             /* Padding */
+}
+
+QPushButton:hover {
+    background-color: #5F9EA0;    /* Darker light blue on hover */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+     </widget>
+    </widget>
     <widget class="QWidget" name="pageAjouter">
      <attribute name="title">
       <string>pageAjouter</string>
@@ -1742,9 +1817,9 @@ color: rgb(0, 0, 0);</string>
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2';&quot;&gt;compse email&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt;&quot;&gt;compse email&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
      <widget class="QPushButton" name="sendBtn">
@@ -1803,7 +1878,7 @@ color: rgb(0, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>1100</width>
-     <height>26</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>

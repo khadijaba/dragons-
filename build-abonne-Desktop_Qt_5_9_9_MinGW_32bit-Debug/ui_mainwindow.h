@@ -45,6 +45,9 @@ public:
     QComboBox *comboBoxTri;
     QPushButton *triButton;
     QLineEdit *lineEdit_search;
+    QWidget *tab_2;
+    QLineEdit *idarduino;
+    QPushButton *ajouterButton_2;
     QWidget *pageAjouter;
     QLabel *label_4;
     QPushButton *ajouterButton;
@@ -352,6 +355,59 @@ public:
 "}\n"
 ""));
         tabWidget->addTab(pageAfficher, QString());
+        tab_2 = new QWidget();
+        tab_2->setObjectName(QStringLiteral("tab_2"));
+        idarduino = new QLineEdit(tab_2);
+        idarduino->setObjectName(QStringLiteral("idarduino"));
+        idarduino->setGeometry(QRect(220, 300, 291, 31));
+        idarduino->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    border: 2px solid #3498db; /* Bordure bleue */\n"
+"    border-radius: 15px; /* Coins arrondis plus prononc\303\251s */\n"
+"    padding: 5px 15px; /* Espacement interne */\n"
+"    background-color: rgba(44, 62, 80, 0.5); /* Fond bleu fonc\303\251 avec plus de transparence */\n"
+"    selection-background-color: #2980b9; /* Couleur de fond de la s\303\251lection */\n"
+"    color: #ecf0f1; /* Couleur du texte */\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 2px solid #2980b9; /* Bordure bleue plus fonc\303\251e pendant le focus */\n"
+"    color: #ecf0f1; /* Couleur du texte pendant le focus */\n"
+"    outline: none; /* Supprimer l'effet de soulignement bleu sur le focus */\n"
+"    box-shadow: 0 0 10px rgba(41, 128, 185, 0.7); /* L\303\251g\303\250re ombre lorsqu'en focus */\n"
+"}\n"
+"\n"
+"QLineEdit::hover {\n"
+"    background-color: rgba(52, 73, 94, 0.7); /* Fond bleu fonc\303\251 plus clair avec plus de transparence lorsqu'il est survol\303\251 */\n"
+"}\n"
+"\n"
+"QLineEdit::disabled {\n"
+"  "
+                        "  color: #bdc3c7; /* Couleur du texte lorsque d\303\251sactiv\303\251 */\n"
+"    background-color: rgba(52, 73, 94, 0.4); /* Fond bleu fonc\303\251 avec plus de transparence lorsqu'il est d\303\251sactiv\303\251 */\n"
+"    border: 2px solid #566573; /* Bordure gris fonc\303\251 lorsqu'il est d\303\251sactiv\303\251 */\n"
+"}\n"
+"\n"
+"QLineEdit::placeholder {\n"
+"    color: #bdc3c7; /* Couleur du texte de l'espace r\303\251serv\303\251 */\n"
+"}\n"
+""));
+        ajouterButton_2 = new QPushButton(tab_2);
+        ajouterButton_2->setObjectName(QStringLiteral("ajouterButton_2"));
+        ajouterButton_2->setGeometry(QRect(610, 290, 121, 71));
+        ajouterButton_2->setStyleSheet(QLatin1String("/* QPushButton style */\n"
+"QPushButton {\n"
+"    background-color: #87CEEB;    /* Light blue background color */\n"
+"    color: white;                 /* White text color */\n"
+"    border: 2px solid #87CEEB;    /* Light blue border */\n"
+"    border-radius: 5px;           /* Rounded corners */\n"
+"    padding: 5px 10px;             /* Padding */\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #5F9EA0;    /* Darker light blue on hover */\n"
+"}\n"
+""));
+        tabWidget->addTab(tab_2, QString());
         pageAjouter = new QWidget();
         pageAjouter->setObjectName(QStringLiteral("pageAjouter"));
         label_4 = new QLabel(pageAjouter);
@@ -1196,7 +1252,7 @@ public:
         MainWindow->setStatusBar(statusbar);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1100, 26));
+        menubar->setGeometry(QRect(0, 0, 1100, 22));
         MainWindow->setMenuBar(menubar);
 
         retranslateUi(MainWindow);
@@ -1246,6 +1302,8 @@ public:
         lineEdit_search->setInputMask(QString());
         lineEdit_search->setText(QApplication::translate("MainWindow", "chercher par le nom", Q_NULLPTR));
         tabWidget->setTabText(tabWidget->indexOf(pageAfficher), QApplication::translate("MainWindow", "pageAfficher", Q_NULLPTR));
+        ajouterButton_2->setText(QApplication::translate("MainWindow", "rechercher", Q_NULLPTR));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QApplication::translate("MainWindow", "arduino", Q_NULLPTR));
         label_4->setText(QString());
         ajouterButton->setText(QApplication::translate("MainWindow", "ajouter", Q_NULLPTR));
         groupBox->setTitle(QString());
@@ -1292,9 +1350,9 @@ public:
         msg->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2';\">compse email</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';\"><br /></p></body></html>", Q_NULLPTR));
+"</style></head><body style=\" font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'MS Shell Dlg 2'; font-size:7.8pt;\">compse email</span></p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2'; font-size:7.8pt;\"><br /></p></body></html>", Q_NULLPTR));
         sendBtn->setText(QApplication::translate("MainWindow", "ENVOYER", Q_NULLPTR));
         fromLineEdit->setText(QApplication::translate("MainWindow", "from", Q_NULLPTR));
         label_11->setText(QApplication::translate("MainWindow", "compose your email:", Q_NULLPTR));

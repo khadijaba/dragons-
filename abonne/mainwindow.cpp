@@ -56,7 +56,15 @@ MainWindow::MainWindow(QWidget *parent)
     ui->comboBox->addItem("cheque");
     ui->comboBox->addItem("espece");
 
+    int ret=Ar.connect_arduino(); // lancer la connexion à arduino
 
+    switch(ret){
+    case(0):qDebug()<< "arduino is available and connected to : "<< Ar.getarduino_port_name();
+        break;
+    case(1):qDebug() << "arduino is available but not connected to :" <<Ar.getarduino_port_name();
+       break;
+    case(-1):qDebug() << "arduino is not available";
+    }
 }
 
 MainWindow::~MainWindow()
@@ -433,24 +441,7 @@ void MainWindow::on_stat_clicked()
 
     series->setHoleSize(0.25);
 
-    /*QPieSlice * Slice_1= series->append("carte bancaire",30);
-    Slice_1->setExploded(true);
-    Slice_1->setLabelVisible(true);
-    Slice_1->setPen(QPen(Qt::blue,1));
-    Slice_1->setBrush(Qt::cyan);
 
-    QPieSlice * Slice_2=series->append("espece" ,30);
-    Slice_2->setExploded(true);
-    Slice_2->setLabelVisible(true);
-    Slice_2->setPen(QPen(Qt::cyan,1));
-    Slice_2->setBrush(Qt::cyan);
-
-
-    QPieSlice * Slice_3=series->append("cheque",40);
-    Slice_3->setExploded(true);
-    Slice_3->setLabelVisible(true);
-    Slice_3->setPen(QPen(Qt::red,1));
-    Slice_3->setBrush(Qt::cyan);*/
 
    QChart *chart = new QChart();
    chart->addSeries(series);
@@ -500,4 +491,38 @@ void TranslatorDialog::on_translateButton_clicked() {
 void MainWindow::openTranslatorDialog() {
     TranslatorDialog dialog(this); // Assurez-vous que TranslatorDialog est inclus.
     dialog.exec();
+}
+
+void MainWindow::on_tableWidget_cellActivated(int row, int column)
+{
+
+}
+
+void MainWindow::on_ajouterButton_2_clicked()
+{
+
+  int id= ui->idarduino->text().toInt();
+
+       qDebug() << data;
+
+
+
+
+               // Call the modifierquantite function
+               QString result = Ar.recuperdoone(id);
+
+               // If the result is not "0", extract name and new quantity using substring
+               if (result != "0") {
+                      qDebug() << "result"<<result;
+                      QByteArray x=result.toUtf8();
+                      qDebug() << x ;
+                      Ar.write_to_arduino(x);
+
+               }else {
+
+                   Ar.write_to_arduino("0");
+               }
+
+
+
 }
