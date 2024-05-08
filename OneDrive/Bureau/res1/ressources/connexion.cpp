@@ -1,0 +1,4 @@
+#ifndef CONNEXION_CPP
+#define CONNEXION_CPP
+
+#endif // CONNEXION_CPP

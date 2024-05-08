@@ -1,0 +1,51 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icon/accueil.png</file>
+        <file>icon/ajouter (2).png</file>
+        <file>icon/apprentissage-en-ligne.png</file>
+        <file>icon/bouton-ajouter.png</file>
+        <file>icon/calendrier.png</file>
+        <file>icon/fichier-pdf.png</file>
+        <file>icon/graphique.png</file>
+        <file>icon/letat-du-projet.png</file>
+        <file>icon/machine-robotique.png</file>
+        <file>icon/officier.png</file>
+        <file>icon/pensee-positive.png</file>
+        <file>icon/projet.png</file>
+        <file>icon/seo.png</file>
+        <file>icon/sidentifier.png</file>
+        <file>icon/statistiques.png</file>
+        <file>icon/tableau-de-bord.png</file>
+        <file>icon/telecharger-le-pdf.png</file>
+        <file>icon/vide.png</file>
+        <file>icon/gestions.png</file>
+        <file>icon/appname.png</file>
+        <file>icon/logo projet.png</file>
+        <file>icon/KK.png</file>
+        <file>icon/engrenage.png</file>
+        <file>icon/logos.png</file>
+        <file>icon/bavarder.png</file>
+        <file>icon/bonjour.png</file>
+        <file>icon/chercher.png</file>
+        <file>icon/doc.png</file>
+        <file>icon/effacer (1).png</file>
+        <file>icon/en-train-detudier.png</file>
+        <file>icon/gomme.png</file>
+        <file>icon/les-yeux-croises.png</file>
+        <file>icon/modifier-les-informations.png</file>
+        <file>icon/oeil.png</file>
+        <file>icon/reconnaissance-de-visage.png</file>
+        <file>icon/scanner.png</file>
+        <file>icon/stylo.png</file>
+        <file>icon/gm.png</file>
+        <file>icon/reglages.png</file>
+        <file>icon/robot.png</file>
+        <file>icon/annuler.png</file>
+        <file>icon/envoi-en-cours.png</file>
+        <file>icon/envoyer.png</file>
+        <file>icon/imprimante.png</file>
+        <file>icon/moins-que.png</file>
+        <file>icon/des-details.png</file>
+        <file>icon/xls.png</file>
+    </qresource>
+</RCC>

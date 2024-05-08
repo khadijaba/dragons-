@@ -1,0 +1,3 @@
+[submodule "smart-tv-channels"]
+	path = smart-tv-channels
+	url = https://github.com/khadijaba/smart-tv-channels.git

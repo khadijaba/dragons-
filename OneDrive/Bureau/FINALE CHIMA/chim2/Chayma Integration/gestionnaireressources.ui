@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>gestionnaireressources</class>
+ <widget class="QDialog" name="gestionnaireressources">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1063</width>
+    <height>722</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="fond_4">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>-10</y>
+     <width>1001</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ressources.qrc">:/new/prefix1/icon/gestions.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QTableView" name="tableViewRequests">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>120</y>
+     <width>571</width>
+     <height>241</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonSubmitRequest">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>450</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>submit</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="on_buttonApprove">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>450</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>approve</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="on_buttonDeny">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>450</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>deny</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="on_buttonHold">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>450</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>hold</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEditQuantity">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>30</y>
+     <width>113</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="quantiteDemandee">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>30</y>
+     <width>81</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>quantite:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="nomRessource">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>60</y>
+     <width>131</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>nom ressource</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBoxResourceType">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>60</y>
+     <width>181</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>Imp. 3D</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Découpe Laser</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Fraiseuse CNC </string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Découpe Vinyle </string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Composants</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>Kits Arduino </string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

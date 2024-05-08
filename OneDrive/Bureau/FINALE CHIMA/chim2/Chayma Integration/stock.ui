@@ -1,0 +1,1003 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>stock</class>
+ <widget class="QDialog" name="stock">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>947</width>
+    <height>758</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="fond_4">
+   <property name="geometry">
+    <rect>
+     <x>-20</x>
+     <y>-10</y>
+     <width>1001</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="ressources.qrc">:/new/prefix1/icon/gestions.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QStackedWidget" name="fenetre_ressources">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>10</y>
+     <width>791</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <property name="currentIndex">
+    <number>0</number>
+   </property>
+   <widget class="QWidget" name="listressources_2">
+    <widget class="QLineEdit" name="quoi_7">
+     <property name="geometry">
+      <rect>
+       <x>190</x>
+       <y>80</y>
+       <width>441</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QLineEdit {
+	background-color: #F8F8F8;
+	    color: blue;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #FFFFFF;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+     </property>
+     <property name="placeholderText">
+      <string extracomment="nom de l'utilisateur">Rechercher</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="recherchr_7">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>80</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    
+	background-color: #F8F8F8;
+	    color: blue;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="ressources.qrc">
+       <normaloff>:/new/prefix1/icon/chercher.png</normaloff>:/new/prefix1/icon/chercher.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_76">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>311</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;</string>
+     </property>
+     <property name="text">
+      <string>liste stock</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pdf_2">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>20</y>
+       <width>61</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="ressources.qrc">
+       <normaloff>:/new/prefix1/icon/fichier-pdf.png</normaloff>:/new/prefix1/icon/fichier-pdf.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>40</width>
+       <height>40</height>
+      </size>
+     </property>
+     <property name="shortcut">
+      <string notr="true"/>
+     </property>
+    </widget>
+    <widget class="QTableView" name="tableView_2">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>781</width>
+       <height>391</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>540</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>ID:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_idASupprimer_2">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>550</y>
+       <width>251</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="supprimerStock">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>550</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Supprimer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="refresh_2">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>90</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>refresh</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_stat_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>90</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>stat</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pb_tri_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>640</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TRI_NOM</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnOpenResourceAlert">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>670</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Alerte </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>640</y>
+       <width>101</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>verifier quantite</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="triQuantite">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>640</y>
+       <width>93</width>
+       <height>28</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>tri_Quantite</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="ajout_reccources_2">
+    <widget class="QGroupBox" name="groupBox_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>0</y>
+       <width>791</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>4</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="accessibleDescription">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+    QGroupBox{
+border-radius: 20px; /* Rayon des coins arrondis */ 
+   border: 2px solid #F8F8F8;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;
+  	background-color: #F8F8F8;
+}</string>
+     </property>
+     <property name="title">
+      <string>ajouter stock</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_11">
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_138">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>seuil_min</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_139">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>id_stock</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_quantite">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_129">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>quantite_s</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="4">
+       <widget class="QPushButton" name="ajouterStock">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string>Ajouter</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QLineEdit" name="lineEdit_seuilMin">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_idStock">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="2">
+       <widget class="QPushButton" name="precedent">
+        <property name="text">
+         <string>precedent</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QPushButton" name="passer_page_modifier">
+        <property name="text">
+         <string>page suivant</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="pageModifier">
+    <widget class="QGroupBox" name="groupBox_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>791</width>
+       <height>691</height>
+      </rect>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>4</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="accessibleDescription">
+      <string/>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+    QGroupBox{
+border-radius: 20px; /* Rayon des coins arrondis */ 
+   border: 2px solid #F8F8F8;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;
+  	background-color: #F8F8F8;
+}</string>
+     </property>
+     <property name="title">
+      <string>modifier stock</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_12">
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEdit_image_R_4">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLineEdit" name="lineEdit_description_R_4">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_140">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>id_stock</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineEdit_nom_4">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_141">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>seuil_min</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_130">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>quantite_s</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="modifierStock">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string>modifier</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="chercher">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string>chercher</string>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="calender_disponibilte_2">
+    <widget class="QCalendarWidget" name="calendarWidget_7">
+     <property name="geometry">
+      <rect>
+       <x>300</x>
+       <y>110</y>
+       <width>501</width>
+       <height>411</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="statp_ressources_2"/>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget_8">
+   <property name="geometry">
+    <rect>
+     <x>-10</x>
+     <y>240</y>
+     <width>161</width>
+     <height>332</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="sidebar6">
+    <item>
+     <widget class="QPushButton" name="retour_m_ressources">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+      </property>
+      <property name="text">
+       <string> Menu</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/accueil.png</normaloff>:/new/prefix1/icon/accueil.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="listeressources">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+      </property>
+      <property name="text">
+       <string>rechercher</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/seo.png</normaloff>:/new/prefix1/icon/seo.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="ajjj">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+      </property>
+      <property name="text">
+       <string>ajouter</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/ajouter (2).png</normaloff>:/new/prefix1/icon/ajouter (2).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="modifierButton_3">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+      </property>
+      <property name="text">
+       <string>modifier</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/ajouter (2).png</normaloff>:/new/prefix1/icon/ajouter (2).png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="calendrierdisp">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+      </property>
+      <property name="text">
+       <string>Calendrier</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/calendrier.png</normaloff>:/new/prefix1/icon/calendrier.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="statressources">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+      </property>
+      <property name="text">
+       <string>Statistique</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/statistiques.png</normaloff>:/new/prefix1/icon/statistiques.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

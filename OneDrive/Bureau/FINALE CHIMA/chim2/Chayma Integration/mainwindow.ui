@@ -1,0 +1,6786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>787</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FabMate</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ressources.qrc">
+    <normaloff>:/new/prefix1/icon/logo projet.png</normaloff>:/new/prefix1/icon/logo projet.png</iconset>
+  </property>
+  <property name="animated">
+   <bool>true</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1011</width>
+      <height>751</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>7</number>
+    </property>
+    <widget class="QWidget" name="login">
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-150</y>
+        <width>1321</width>
+        <height>1011</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/KK.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_13">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/appname.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="user">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>320</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string extracomment="nom de l'utilisateur">Nom utilisateur</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="mtp">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>390</y>
+        <width>281</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+      <property name="placeholderText">
+       <string extracomment="mot de passe">Mot de passe</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="login_2">
+      <property name="geometry">
+       <rect>
+        <x>400</x>
+        <y>490</y>
+        <width>181</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>connecter</string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_33">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>180</y>
+        <width>91</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/logos.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+      <property name="openExternalLinks">
+       <bool>true</bool>
+      </property>
+      <property name="textInteractionFlags">
+       <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="scanface">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>540</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/reconnaissance-de-visage.png</normaloff>:/new/prefix1/icon/reconnaissance-de-visage.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>40</width>
+        <height>40</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="forgetmtp">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>460</y>
+        <width>141</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 0px 0px;
+    border: none;
+    border-radius: 0px;
+    font-size: 14px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: none;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: none;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Mot de passe oublié ? </string>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>20</width>
+        <height>20</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="login_3">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>540</y>
+        <width>51</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normalon>:/new/prefix1/icon/scanner.png</normalon>
+       </iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="menu">
+     <widget class="QPushButton" name="projet_menu">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>330</y>
+        <width>251</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Profil
+</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Project</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/projet.png</normaloff>:/new/prefix1/icon/projet.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ressources_menu">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>480</y>
+        <width>251</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Profil
+</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string> Ressources</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/machine-robotique.png</normaloff>:/new/prefix1/icon/machine-robotique.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="entrepreneurs_menu">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>180</y>
+        <width>251</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Profil
+</string>
+      </property>
+      <property name="toolTipDuration">
+       <number>-6</number>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Entrepreneurs</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/pensee-positive.png</normaloff>:/new/prefix1/icon/pensee-positive.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="formations_menu">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>330</y>
+        <width>251</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Profil
+</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>   Formations</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/apprentissage-en-ligne.png</normaloff>:/new/prefix1/icon/apprentissage-en-ligne.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="out_menu">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>660</y>
+        <width>71</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/sidentifier.png</normaloff>:/new/prefix1/icon/sidentifier.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>50</width>
+        <height>50</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="param_menu">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>480</y>
+        <width>251</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Profil
+</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>  Parametres</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/engrenage.png</normaloff>:/new/prefix1/icon/engrenage.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="etudeprojet_menu">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>330</y>
+        <width>251</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string notr="true">Profil
+</string>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>Etude de Projet</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/statistiques.png</normaloff>:/new/prefix1/icon/statistiques.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="profil_menu">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>180</y>
+        <width>251</width>
+        <height>141</height>
+       </rect>
+      </property>
+      <property name="toolTip">
+       <string>Profil
+</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+    font-size: 20px;
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+      </property>
+      <property name="text">
+       <string>My Profil</string>
+      </property>
+      <property name="icon">
+       <iconset resource="ressources.qrc">
+        <normaloff>:/new/prefix1/icon/officier.png</normaloff>:/new/prefix1/icon/officier.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>70</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="autoRepeatDelay">
+       <number>295</number>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_14">
+      <property name="geometry">
+       <rect>
+        <x>-40</x>
+        <y>-10</y>
+        <width>1091</width>
+        <height>771</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/KK.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>111</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/appname.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label_14</zorder>
+     <zorder>projet_menu</zorder>
+     <zorder>ressources_menu</zorder>
+     <zorder>entrepreneurs_menu</zorder>
+     <zorder>formations_menu</zorder>
+     <zorder>out_menu</zorder>
+     <zorder>param_menu</zorder>
+     <zorder>etudeprojet_menu</zorder>
+     <zorder>profil_menu</zorder>
+     <zorder>label_2</zorder>
+    </widget>
+    <widget class="QWidget" name="gestion_projet">
+     <widget class="QStackedWidget" name="fenetre_projets">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>811</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="listprojet">
+       <widget class="QLineEdit" name="quoi">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>80</y>
+          <width>431</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	background-color: #F8F8F8;
+	    color: blue;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #FFFFFF;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string extracomment="nom de l'utilisateur">Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="recherchr">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>80</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: #F8F8F8;
+	    color: blue;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/chercher.png</normaloff>:/new/prefix1/icon/chercher.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>751</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8; font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>749</width>
+           <height>339</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>140</y>
+          <width>161</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>Id projet</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_44">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>140</y>
+          <width>281</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>statut</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_45">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>140</y>
+          <width>281</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+   border-radius: 10px;
+    padding: 7px; </string>
+        </property>
+        <property name="text">
+         <string>avancement</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_16">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>251</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;</string>
+        </property>
+        <property name="text">
+         <string>Liste des Projets</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="iconfiltre">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>530</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="ressources.qrc">:/new/prefix1/icon/reglages.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="nomfiltre">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>530</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">	    color: blue;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+  color: grey;\n    font-size: 20px;\n    padding: 7px; \n font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>Trier par:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>140</y>
+          <width>221</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>Nom projet </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_46">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>530</y>
+          <width>751</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="out_menu_2">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>70</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/fichier-pdf.png</normaloff>:/new/prefix1/icon/fichier-pdf.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="out_menu_9">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>70</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/xls.png</normaloff>:/new/prefix1/icon/xls.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="out_menu_12">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>70</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/imprimante.png</normaloff>:/new/prefix1/icon/imprimante.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <zorder>label_46</zorder>
+       <zorder>quoi</zorder>
+       <zorder>recherchr</zorder>
+       <zorder>scrollArea</zorder>
+       <zorder>label_42</zorder>
+       <zorder>label_16</zorder>
+       <zorder>iconfiltre</zorder>
+       <zorder>nomfiltre</zorder>
+       <zorder>label_43</zorder>
+       <zorder>out_menu_2</zorder>
+       <zorder>label_44</zorder>
+       <zorder>label_45</zorder>
+       <zorder>out_menu_9</zorder>
+       <zorder>out_menu_12</zorder>
+      </widget>
+      <widget class="QWidget" name="detailprojet">
+       <widget class="QPushButton" name="returnlistproject">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>41</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/moins-que.png</normaloff>:/new/prefix1/icon/moins-que.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>30</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="ajoutprojet">
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>781</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>4</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+    QGroupBox{
+border-radius: 20px; /* Rayon des coins arrondis */ 
+   border: 2px solid #F8F8F8;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;
+  	background-color: #F8F8F8;
+}</string>
+        </property>
+        <property name="title">
+         <string>Ajouter un Projet</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="nom_projet">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLineEdit" name="score_p">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLineEdit" name="responsable">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_8">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>nom projet</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QPushButton" name="ajout_p">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>Ajouter</string>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="label_6">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Responsable du projet</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QPushButton" name="vider">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>Vider les cases</string>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/new/prefix1/icon/gomme.png</normaloff>:/new/prefix1/icon/gomme.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_5">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>statut</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="QLabel" name="label_9">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Participants</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLineEdit" name="statut">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1" colspan="2">
+          <widget class="QLineEdit" name="description">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>date de fin</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="label_10">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Score</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="4">
+          <widget class="QLineEdit" name="participants">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_4">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>date de debut</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QDateEdit" name="date_d_p"/>
+         </item>
+         <item row="2" column="1">
+          <widget class="QDateEdit" name="date_f_p"/>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="calender_prj">
+       <widget class="QCalendarWidget" name="calendarWidget">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>110</y>
+          <width>501</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="statp"/>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1000</width>
+        <height>724</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/gestions.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/appname.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>161</width>
+        <height>276</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="sidebar1">
+       <item>
+        <widget class="QPushButton" name="retour_p">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string> Menu</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/accueil.png</normaloff>:/new/prefix1/icon/accueil.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="list_proj">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Search</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/seo.png</normaloff>:/new/prefix1/icon/seo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ajout_proj">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Add Project</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/ajouter (2).png</normaloff>:/new/prefix1/icon/ajouter (2).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="calendrier_proj">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Calender</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/calendrier.png</normaloff>:/new/prefix1/icon/calendrier.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="stat_projet">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Statistic</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/statistiques.png</normaloff>:/new/prefix1/icon/statistiques.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <zorder>label</zorder>
+     <zorder>fenetre_projets</zorder>
+     <zorder>label_3</zorder>
+     <zorder>verticalLayoutWidget</zorder>
+    </widget>
+    <widget class="QWidget" name="gestion_etude">
+     <widget class="QLabel" name="label_15">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1001</width>
+        <height>731</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/gestions.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_17">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/appname.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>161</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="sidebar2">
+       <item>
+        <widget class="QPushButton" name="retour_m_etude">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string> Menu</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/accueil.png</normaloff>:/new/prefix1/icon/accueil.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="listeetude">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Search</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/seo.png</normaloff>:/new/prefix1/icon/seo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ajoutetude">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Add new</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/ajouter (2).png</normaloff>:/new/prefix1/icon/ajouter (2).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="calendrieretude">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>ChatBox</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/robot.png</normaloff>:/new/prefix1/icon/robot.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statetude">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Statistic</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/statistiques.png</normaloff>:/new/prefix1/icon/statistiques.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="fenetre_etudes">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>811</width>
+        <height>671</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>3</number>
+      </property>
+      <widget class="QWidget" name="list_etudes"/>
+      <widget class="QWidget" name="ajout_etude">
+       <widget class="QGroupBox" name="groupBox_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>791</width>
+          <height>571</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>4</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+    QGroupBox{
+border-radius: 20px; /* Rayon des coins arrondis */ 
+   border: 2px solid #F8F8F8;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;
+  	background-color: #F8F8F8;
+}</string>
+        </property>
+        <property name="title">
+         <string>Ajouter un etude de projet</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="date_fin_3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1" colspan="2">
+          <widget class="QLineEdit" name="description_3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="4">
+          <widget class="QLineEdit" name="participants_3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="label_25">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>analyse marche</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>Vider les cases</string>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/new/prefix1/icon/vide.png</normaloff>:/new/prefix1/icon/vide.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>objectif</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="QLabel" name="label_27">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>competences_necessaires</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_28">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>points forts</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="nom_projet_3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLineEdit" name="responsable_3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>Ajouter</string>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_29">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>id etude</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLineEdit" name="budget_3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="label_30">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>points faibles</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_31">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>faisabilite economique</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="objectif">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_32">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>faisabilite technique</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLineEdit" name="statut_3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="calender_etude">
+       <widget class="QGroupBox" name="groupBox_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>30</y>
+          <width>791</width>
+          <height>581</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLineEdit" name="lineEdit">
+         <property name="geometry">
+          <rect>
+           <x>40</x>
+           <y>520</y>
+           <width>641</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+        <widget class="QTextBrowser" name="textBrowser">
+         <property name="geometry">
+          <rect>
+           <x>25</x>
+           <y>81</y>
+           <width>731</width>
+           <height>421</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTextBrowser {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_12">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>520</y>
+           <width>51</width>
+           <height>51</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/envoyer.png</normaloff>:/new/prefix1/icon/envoyer.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>40</width>
+           <height>40</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_18">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>30</y>
+           <width>171</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;</string>
+         </property>
+         <property name="text">
+          <string>Chat Box</string>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="stat_etude"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gestion_entrepreneurs">
+     <widget class="QLabel" name="fond">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1001</width>
+        <height>731</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/gestions.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nomapp">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/appname.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_5">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>161</width>
+        <height>281</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="sidebar2_3">
+       <item>
+        <widget class="QPushButton" name="retour_m_entrepreneur">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string> Menu</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/accueil.png</normaloff>:/new/prefix1/icon/accueil.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="listeentrepreneur">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>rechercher</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/seo.png</normaloff>:/new/prefix1/icon/seo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ajoutentrepreneur">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Add new</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/ajouter (2).png</normaloff>:/new/prefix1/icon/ajouter (2).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="calendrierentrepre">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Calendrier</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/calendrier.png</normaloff>:/new/prefix1/icon/calendrier.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statentrepreneur">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Statistique</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/statistiques.png</normaloff>:/new/prefix1/icon/statistiques.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="fenetre_entrepreneur">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>811</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="listentrepreneurs">
+       <widget class="QLineEdit" name="quoi_3">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>80</y>
+          <width>431</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	background-color: #F8F8F8;
+	    color: blue;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #FFFFFF;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string extracomment="nom de l'utilisateur">Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="recherchr_3">
+        <property name="geometry">
+         <rect>
+          <x>520</x>
+          <y>80</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: #F8F8F8;
+	    color: blue;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/chercher.png</normaloff>:/new/prefix1/icon/chercher.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea_3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>180</y>
+          <width>751</width>
+          <height>341</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8; font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>749</width>
+           <height>339</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_79">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>140</y>
+          <width>171</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>Id entrepreneur</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_80">
+        <property name="geometry">
+         <rect>
+          <x>490</x>
+          <y>140</y>
+          <width>281</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>prenom</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_81">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>140</y>
+          <width>191</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+   border-radius: 10px;
+    padding: 7px; </string>
+        </property>
+        <property name="text">
+         <string>cin</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_20">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>311</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;</string>
+        </property>
+        <property name="text">
+         <string>Liste des Entrepreneurs</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_21">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>530</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="ressources.qrc">:/new/prefix1/icon/reglages.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_82">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>530</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">	    color: blue;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+  color: grey;\n    font-size: 20px;\n    padding: 7px; \n font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>Trier par:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_83">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>140</y>
+          <width>181</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>Nom </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_84">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>530</y>
+          <width>751</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="out_menu_5">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>70</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/fichier-pdf.png</normaloff>:/new/prefix1/icon/fichier-pdf.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="out_menu_7">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>70</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/xls.png</normaloff>:/new/prefix1/icon/xls.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <zorder>label_84</zorder>
+       <zorder>quoi_3</zorder>
+       <zorder>recherchr_3</zorder>
+       <zorder>scrollArea_3</zorder>
+       <zorder>label_79</zorder>
+       <zorder>label_81</zorder>
+       <zorder>label_20</zorder>
+       <zorder>label_21</zorder>
+       <zorder>label_82</zorder>
+       <zorder>label_83</zorder>
+       <zorder>out_menu_5</zorder>
+       <zorder>label_80</zorder>
+       <zorder>out_menu_7</zorder>
+      </widget>
+      <widget class="QWidget" name="ajout_entrepreneur">
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>50</y>
+          <width>781</width>
+          <height>501</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>4</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+    QGroupBox{
+border-radius: 20px; /* Rayon des coins arrondis */ 
+   border: 2px solid #F8F8F8;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;
+  	background-color: #F8F8F8;
+}</string>
+        </property>
+        <property name="title">
+         <string>Formulaire d'entrepreneur</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="6" column="4">
+          <widget class="QLineEdit" name="participants_6">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1" colspan="2">
+          <widget class="QLineEdit" name="description_6">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_88">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>date de debut</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="date_debut_3">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLineEdit" name="nom_projet_6">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="QLabel" name="label_86">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Participants</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QPushButton" name="vider_3">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>Vider les cases</string>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/new/prefix1/icon/gomme.png</normaloff>:/new/prefix1/icon/gomme.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="QLineEdit" name="budget_6">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLabel" name="label_91">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Responsable du projet</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="date_fin_6">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="QLabel" name="label_92">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_85">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>date de fin</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_89">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>nom projet</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLineEdit" name="statut_6">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QPushButton" name="pushButton_6">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>Ajouter</string>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QLabel" name="label_87">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Budget</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLineEdit" name="responsable_6">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_90">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>statut</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="calender_p">
+       <widget class="QCalendarWidget" name="calendarWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>110</y>
+          <width>501</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="statp_entrepreneurs"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gestion_formations">
+     <widget class="QLabel" name="fond_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1001</width>
+        <height>731</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/gestions.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nomapp_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/appname.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_6">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>161</width>
+        <height>332</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="sidebar4">
+       <item>
+        <widget class="QPushButton" name="retour_m_formations">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string> Menu</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/accueil.png</normaloff>:/new/prefix1/icon/accueil.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="Foramationslist">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Formations</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/seo.png</normaloff>:/new/prefix1/icon/seo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="formateurlist">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Formateurs</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/seo.png</normaloff>:/new/prefix1/icon/seo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="calendrierformations">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Calendrier</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/calendrier.png</normaloff>:/new/prefix1/icon/calendrier.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statformation">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Statistique</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/statistiques.png</normaloff>:/new/prefix1/icon/statistiques.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="fenetre_formations">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>811</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>1</number>
+      </property>
+      <widget class="QWidget" name="listformations"/>
+      <widget class="QWidget" name="listformateurs">
+       <widget class="QLineEdit" name="quoi_4">
+        <property name="geometry">
+         <rect>
+          <x>340</x>
+          <y>90</y>
+          <width>441</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	background-color: #F8F8F8;
+	    color: blue;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #FFFFFF;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="placeholderText">
+         <string extracomment="nom de l'utilisateur">Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="recherchr_4">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>90</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: #F8F8F8;
+	    color: blue;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/chercher.png</normaloff>:/new/prefix1/icon/chercher.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea_4">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>180</y>
+          <width>461</width>
+          <height>381</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8; font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_4">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>459</width>
+           <height>379</height>
+          </rect>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QLabel" name="label_93">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>140</y>
+          <width>171</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>CIN</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_95">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>140</y>
+          <width>191</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+   border-radius: 10px;
+    padding: 7px; </string>
+        </property>
+        <property name="text">
+         <string>Nom</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_71">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>311</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;</string>
+        </property>
+        <property name="text">
+         <string>Liste des Formateurs</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_72">
+        <property name="geometry">
+         <rect>
+          <x>350</x>
+          <y>570</y>
+          <width>31</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap resource="ressources.qrc">:/new/prefix1/icon/reglages.png</pixmap>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_96">
+        <property name="geometry">
+         <rect>
+          <x>390</x>
+          <y>570</y>
+          <width>81</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">	    color: blue;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+  color: grey;\n    font-size: 20px;\n    padding: 7px; \n font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>Trier par:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_97">
+        <property name="geometry">
+         <rect>
+          <x>590</x>
+          <y>140</y>
+          <width>201</width>
+          <height>34</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>50</weight>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string>Prenom</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_98">
+        <property name="geometry">
+         <rect>
+          <x>330</x>
+          <y>570</y>
+          <width>441</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>311</width>
+          <height>541</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Berlin Sans FB</family>
+          <pointsize>-1</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    QGroupBox{
+border-radius: 25px; /* Rayon des coins arrondis */ 
+   border: 2px solid #F8F8F8;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;
+  	background-color: #F8F8F8;
+}
+
+</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QLabel" name="label_109">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>0</y>
+           <width>141</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;</string>
+         </property>
+         <property name="text">
+          <string>Formulaire</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_110">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>60</y>
+           <width>108</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>CIN</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_111">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>110</y>
+           <width>108</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Nom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_112">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>170</y>
+           <width>108</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Prenom</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_113">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>220</y>
+           <width>108</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_114">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>270</y>
+           <width>111</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Tarif par heure</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_115">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>320</y>
+           <width>111</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Info bancaires</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="statut_8">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>60</y>
+           <width>231</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="statut_10">
+         <property name="geometry">
+          <rect>
+           <x>70</x>
+           <y>110</y>
+           <width>231</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="statut_11">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>170</y>
+           <width>231</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="statut_12">
+         <property name="geometry">
+          <rect>
+           <x>80</x>
+           <y>220</y>
+           <width>231</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="statut_13">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>270</y>
+           <width>161</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="statut_14">
+         <property name="geometry">
+          <rect>
+           <x>140</x>
+           <y>320</y>
+           <width>161</width>
+           <height>40</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="pushButton_14">
+         <property name="geometry">
+          <rect>
+           <x>100</x>
+           <y>390</y>
+           <width>165</width>
+           <height>42</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+         </property>
+         <property name="text">
+          <string>Ajouter</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="vider_5">
+         <property name="geometry">
+          <rect>
+           <x>30</x>
+           <y>390</y>
+           <width>51</width>
+           <height>41</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/gomme.png</normaloff>:/new/prefix1/icon/gomme.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+       <widget class="QPushButton" name="out_menu_11">
+        <property name="geometry">
+         <rect>
+          <x>720</x>
+          <y>10</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/imprimante.png</normaloff>:/new/prefix1/icon/imprimante.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="out_menu_6">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>10</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/fichier-pdf.png</normaloff>:/new/prefix1/icon/fichier-pdf.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="out_menu_10">
+        <property name="geometry">
+         <rect>
+          <x>600</x>
+          <y>10</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/xls.png</normaloff>:/new/prefix1/icon/xls.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <zorder>label_98</zorder>
+       <zorder>quoi_4</zorder>
+       <zorder>recherchr_4</zorder>
+       <zorder>scrollArea_4</zorder>
+       <zorder>label_93</zorder>
+       <zorder>label_95</zorder>
+       <zorder>label_71</zorder>
+       <zorder>label_72</zorder>
+       <zorder>label_96</zorder>
+       <zorder>label_97</zorder>
+       <zorder>groupBox_8</zorder>
+       <zorder>out_menu_11</zorder>
+       <zorder>out_menu_6</zorder>
+       <zorder>out_menu_10</zorder>
+      </widget>
+      <widget class="QWidget" name="calender_p_2">
+       <widget class="QCalendarWidget" name="calendarWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>110</y>
+          <width>501</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="statp_entrepreneurs_2"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gestion_profils">
+     <widget class="QLabel" name="fond_3">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1001</width>
+        <height>731</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/gestions.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nomapp_3">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/appname.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_7">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>164</width>
+        <height>332</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="sidebar5">
+       <item>
+        <widget class="QPushButton" name="retour_m_profil">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string> Menu</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/accueil.png</normaloff>:/new/prefix1/icon/accueil.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="profile_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Mon Profile</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/officier.png</normaloff>:/new/prefix1/icon/officier.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="message">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Messages</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/bavarder.png</normaloff>:/new/prefix1/icon/bavarder.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="list_utilisateurs">
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>List des Utilisateurs</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/tableau-de-bord.png</normaloff>:/new/prefix1/icon/tableau-de-bord.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>25</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="calender">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Calendrier</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/calendrier.png</normaloff>:/new/prefix1/icon/calendrier.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statprofile">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Statistique</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/statistiques.png</normaloff>:/new/prefix1/icon/statistiques.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="fenetre_coach">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>811</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="profile">
+       <widget class="QGroupBox" name="userInterface">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>781</width>
+          <height>571</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">  	background-color: #F8F8F8;
+    color: grey;
+    font-size: 20px;
+   border-radius: 10px;
+    padding: 7px;  font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <widget class="QPushButton" name="me_setForm">
+         <property name="geometry">
+          <rect>
+           <x>200</x>
+           <y>110</y>
+           <width>34</width>
+           <height>34</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	border:none;
+border-radius:15px;
+}
+
+QPushButton::hover {
+  background-color: rgb(254, 129, 75);
+}</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>:/resource/img/update.png</normaloff>:/resource/img/update.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>19</width>
+           <height>19</height>
+          </size>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_73">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>160</y>
+           <width>61</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+         </property>
+         <property name="text">
+          <string>Nom:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="me_nom">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>160</y>
+           <width>201</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+	    color: blue;
+</string>
+         </property>
+         <property name="text">
+          <string>Boudabous</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_74">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>220</y>
+           <width>91</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+         </property>
+         <property name="text">
+          <string>Prenom:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="me_prenom">
+         <property name="geometry">
+          <rect>
+           <x>510</x>
+           <y>220</y>
+           <width>231</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+	    color: blue;
+</string>
+         </property>
+         <property name="text">
+          <string>Khalil</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_77">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>350</y>
+           <width>71</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+         </property>
+         <property name="text">
+          <string>Email:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="me_email">
+         <property name="geometry">
+          <rect>
+           <x>470</x>
+           <y>350</y>
+           <width>291</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+	    color: blue;
+</string>
+         </property>
+         <property name="text">
+          <string>khalil.boudabous@gmail.com</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_78">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>110</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+         </property>
+         <property name="text">
+          <string>Num carte:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="me_num_carte">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>110</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+	    color: blue;
+</string>
+         </property>
+         <property name="text">
+          <string>0000</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_108">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>280</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+         </property>
+         <property name="text">
+          <string>Num tel:</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="me_num_tel">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>280</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+	    color: blue;
+</string>
+         </property>
+         <property name="text">
+          <string>41156289</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_107">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>60</y>
+           <width>121</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; </string>
+         </property>
+         <property name="text">
+          <string>Cin :</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="me_num_carte_2">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>60</y>
+           <width>181</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+           <weight>50</weight>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">   font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+	    color: blue;
+</string>
+         </property>
+         <property name="text">
+          <string>1499999</string>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="login_7">
+         <property name="geometry">
+          <rect>
+           <x>460</x>
+           <y>460</y>
+           <width>181</width>
+           <height>42</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <family>Berlin Sans FB</family>
+           <pointsize>-1</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+         </property>
+         <property name="text">
+          <string>Modifier</string>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="messages"/>
+      <widget class="QWidget" name="List_users"/>
+      <widget class="QWidget" name="calendrier">
+       <widget class="QCalendarWidget" name="calendarWidget_5">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>110</y>
+          <width>501</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="statprofil"/>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="gestion_ressources">
+     <widget class="QLabel" name="fond_4">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>1001</width>
+        <height>731</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/gestions.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nomapp_4">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>60</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="ressources.qrc">:/new/prefix1/icon/appname.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QWidget" name="verticalLayoutWidget_8">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>170</y>
+        <width>161</width>
+        <height>332</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="sidebar6">
+       <item>
+        <widget class="QPushButton" name="retour_m_ressources">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string> Menu</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/accueil.png</normaloff>:/new/prefix1/icon/accueil.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>20</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="listeressources">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>rechercher</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/seo.png</normaloff>:/new/prefix1/icon/seo.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ajjj">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>ajouter</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/ajouter (2).png</normaloff>:/new/prefix1/icon/ajouter (2).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="modifierButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>modifier</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/ajouter (2).png</normaloff>:/new/prefix1/icon/ajouter (2).png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="calendrierdisp">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Calendrier</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/calendrier.png</normaloff>:/new/prefix1/icon/calendrier.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="statressources">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	background-color: #000000;
+	    color: grey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+ 	color:white;	
+	background:#1F1F1F;
+
+}
+
+QPushButton:pressed {
+background-color: #2f2f2f;
+ 	color:white;	
+}</string>
+         </property>
+         <property name="text">
+          <string>Statistique</string>
+         </property>
+         <property name="icon">
+          <iconset resource="ressources.qrc">
+           <normaloff>:/new/prefix1/icon/statistiques.png</normaloff>:/new/prefix1/icon/statistiques.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>30</width>
+           <height>30</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QStackedWidget" name="fenetre_ressources">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>20</y>
+        <width>811</width>
+        <height>691</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="listressources">
+       <widget class="QLineEdit" name="quoi_6">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>80</y>
+          <width>441</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+	background-color: #F8F8F8;
+	    color: blue;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #FFFFFF;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+        </property>
+        <property name="placeholderText">
+         <string extracomment="nom de l'utilisateur">Rechercher</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="recherchr_6">
+        <property name="geometry">
+         <rect>
+          <x>620</x>
+          <y>80</y>
+          <width>51</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: #F8F8F8;
+	    color: blue;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/chercher.png</normaloff>:/new/prefix1/icon/chercher.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_75">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>311</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;</string>
+        </property>
+        <property name="text">
+         <string>Liste des Ressources</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pdf">
+        <property name="geometry">
+         <rect>
+          <x>730</x>
+          <y>20</y>
+          <width>61</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    
+	background-color: none;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+   	background-color: #F8F8F8;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="ressources.qrc">
+          <normaloff>:/new/prefix1/icon/fichier-pdf.png</normaloff>:/new/prefix1/icon/fichier-pdf.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>40</width>
+          <height>40</height>
+         </size>
+        </property>
+        <property name="shortcut">
+         <string notr="true"/>
+        </property>
+       </widget>
+       <widget class="QTableView" name="tableView">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>140</y>
+          <width>781</width>
+          <height>391</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_19">
+        <property name="geometry">
+         <rect>
+          <x>100</x>
+          <y>540</y>
+          <width>161</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID:</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_idASupprimer">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>550</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="supprimerRessource">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>550</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Supprimer</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="refresh">
+        <property name="geometry">
+         <rect>
+          <x>710</x>
+          <y>90</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>refresh</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_stat">
+        <property name="geometry">
+         <rect>
+          <x>30</x>
+          <y>90</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>stat</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pb_tri">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>640</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TRI_NOM</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="buttonAjouterDemande">
+        <property name="geometry">
+         <rect>
+          <x>592</x>
+          <y>630</y>
+          <width>151</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ajouterDemande</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="ajout_reccources">
+       <widget class="QLabel" name="label_22">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>20</y>
+          <width>311</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ajouter ressources</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>39</x>
+          <y>80</y>
+          <width>201</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="id_a_3">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+	font: 75 14pt &quot;Times New Roman&quot;;
+	color: rgb(0, 0, 0);
+    border: none;            
+    border-radius: 0px;      
+    background: transparent;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>id_R</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="id_a_2">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+	font: 75 14pt &quot;Times New Roman&quot;;
+	color: rgb(0, 0, 0);
+    border: none;            
+    border-radius: 0px;      
+    background: transparent;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Nom</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="id_a_5">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+	font: 75 14pt &quot;Times New Roman&quot;;
+	color: rgb(0, 0, 0);
+    border: none;            
+    border-radius: 0px;      
+    background: transparent;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>description</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="id_a">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+	font: 75 14pt &quot;Times New Roman&quot;;
+	color: rgb(0, 0, 0);
+    border: none;            
+    border-radius: 0px;      
+    background: transparent;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>id_stock</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QComboBox" name="comboBox_nom">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>230</y>
+          <width>267</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>Imp. 3D</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Découpe Laser</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Fraiseuse CNC </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Découpe Vinyle </string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Composants</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Kits Arduino </string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_id">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>120</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_description_R">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>340</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="lineEdit_idS">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>450</y>
+          <width>113</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="ajouter_r">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>570</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ajouter</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="imageButton">
+        <property name="geometry">
+         <rect>
+          <x>550</x>
+          <y>50</y>
+          <width>93</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="imageLabel">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>50</y>
+          <width>121</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="imagePathLabel">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>150</y>
+          <width>56</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>path</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="openStockDialogButton">
+        <property name="geometry">
+         <rect>
+          <x>560</x>
+          <y>330</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>stock</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="page">
+       <widget class="QGroupBox" name="groupBox_10">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>791</width>
+          <height>691</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>4</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="accessibleDescription">
+         <string/>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">
+    QGroupBox{
+border-radius: 20px; /* Rayon des coins arrondis */ 
+   border: 2px solid #F8F8F8;
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 30px;
+  	background-color: #F8F8F8;
+}</string>
+        </property>
+        <property name="title">
+         <string>modifier ressources</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_137">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>ID_stock</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_134">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Nom</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="idStockLineEdit">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QLabel" name="label_136">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>ID_R</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QPushButton" name="chercherButton">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>chercher</string>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="imagePathLabel_2">
+           <property name="text">
+            <string>TextLabel</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="QPushButton" name="modifierButton">
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    
+	background-color: #FFFFFF;
+	    color: blue;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+ font-family: &quot;Berlin Sans FB&quot;, sans-serif; 
+}
+
+QPushButton:hover {
+background-color: #EDF1F6;
+    color: grey;
+
+}
+
+QPushButton:pressed {
+background-color: #EDF1F6;
+    color: black;
+}</string>
+           </property>
+           <property name="text">
+            <string>modifier</string>
+           </property>
+           <property name="icon">
+            <iconset resource="ressources.qrc">
+             <normaloff>:/new/prefix1/icon/bouton-ajouter.png</normaloff>:/new/prefix1/icon/bouton-ajouter.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>20</width>
+             <height>20</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLineEdit" name="lineEdit_description_R_2">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="comboBox_nom_R_2">
+           <item>
+            <property name="text">
+             <string>Imp. 3D</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Découpe Laser</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Fraiseuse CNC </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Découpe Vinyle </string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Composants</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Kits Arduino </string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="QLineEdit" name="lineEdit_idChercher">
+           <property name="styleSheet">
+            <string notr="true">QLineEdit {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 7px; 
+    selection-background-color: #6dae84;
+    font-size: 18px; 
+}
+
+QLineEdit:focus {
+    border: 1px solid #6dae84;
+}
+QlineEdit:hover{
+border: 1px solid #6dae84;
+}</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_128">
+           <property name="styleSheet">
+            <string notr="true">QLabel {
+    font-family: 'Berlin Sans FB', sans-serif;
+    font-size: 18px;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Description</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="calender_disponibilte">
+       <widget class="QCalendarWidget" name="calendarWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>300</x>
+          <y>110</y>
+          <width>501</width>
+          <height>411</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="statp_ressources"/>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1010</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="ressources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
